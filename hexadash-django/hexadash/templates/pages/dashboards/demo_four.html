@@ -1,0 +1,67 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Four {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="demo4 crm">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb-main">
+                        <h4 class="text-capitalize breadcrumb-title">{% translate "dashboard-menu-title" %}</h4>
+                        <div class="breadcrumb-action justify-content-center flex-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "dashboard-menu-title" %}</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">{% translate "dashboard-demo-four" %}</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-lg-6 mb-25">
+                    {% include 'components/dashboard/demo_four/greetings_card.html' %}
+                </div>
+                <div class="col-xxl-4 col-lg-6 mb-25">
+                    {% include 'components/dashboard/demo_four/performance_overview.html' %}
+                </div>
+                <div class="col-xxl-4 mb-25">
+                    <div class="row">
+                        {% include 'components/dashboard/demo_four/overview_cards.html' %}
+                        <div class="col-12 mt-25">
+                            {% include 'components/dashboard/demo_four/newsletter_cta.html' %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mb-25">
+                    {% include 'components/dashboard/demo_four/task_list.html' %}
+                </div>
+                <div class="col-xl-6 mb-25">
+                    {% include 'components/dashboard/demo_four/marketing_campaigns.html' %}
+                </div>
+                <div class="col-xxl-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-25">
+                            {% include 'components/dashboard/demo_four/author_card.html' %}
+                        </div>
+                        <div class="col-md-6 mb-25">
+                            {% include 'components/dashboard/demo_four/team_members.html' %}
+                        </div>
+                        <div class="col-12 mb-25">
+                            {% include 'components/dashboard/demo_four/social_media_traffic.html' %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_four/chat.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

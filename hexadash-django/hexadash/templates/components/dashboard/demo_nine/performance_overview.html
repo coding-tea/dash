@@ -1,0 +1,46 @@
+{% load static %}
+<div class="card border-0">
+    <div class="card-header border-0">
+        <h6>Performance Overview </h6>
+        <div class="card-extra">
+            <div class="dropdown dropleft">
+                <a href="#" role="button" id="revenue4" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="{% static 'img/svg/more-horizontal.svg' %}" alt="more-horizontal" class="svg">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="revenue4">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body pt-20 pb-30">
+        <div class="device-pieChart-wrap position-relative">
+            <div class="">
+                <div class="performance_overview"></div>
+            </div>
+        </div>
+        <div class="session-wrap session-wrap--top--4">
+            <div class="session-single">
+                <div class="chart-label new">
+                    <span class="label-dot dot-primary"></span>
+                    Target
+                </div>
+            </div>
+            <div class="session-single">
+                <div class="chart-label new">
+                    <span class="label-dot dot-info"></span>
+                    In Progress
+                </div>
+            </div>
+            <div class="session-single">
+                <div class="chart-label new">
+                    <span class="label-dot dot-warning"></span>
+                    Completed
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

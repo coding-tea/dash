@@ -1,0 +1,742 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 08:25+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\hexadash_django\settings.py:133
+msgid "English"
+msgstr ""
+
+#: .\hexadash_django\settings.py:134
+msgid "German"
+msgstr ""
+
+#: .\hexadash_django\settings.py:135
+msgid "Arabic"
+msgstr ""
+
+#: .\templates\pages\dashboards\demo_one.html:15
+#: .\templates\partials\_menu.html:8
+msgid "dashboard-menu-title"
+msgstr "Armaturenbrett"
+
+#: .\templates\partials\_menu.html:13
+msgid "dashboard-demo-one"
+msgstr "Demo Eins"
+
+#: .\templates\partials\_menu.html:16
+msgid "dashboard-demo-two"
+msgstr "Demo Zwei"
+
+#: .\templates\partials\_menu.html:19
+msgid "dashboard-demo-three"
+msgstr "Demo drei"
+
+#: .\templates\partials\_menu.html:22
+msgid "dashboard-demo-four"
+msgstr "Demo vier"
+
+#: .\templates\partials\_menu.html:25
+msgid "dashboard-demo-five"
+msgstr "Demo fünf"
+
+#: .\templates\partials\_menu.html:28
+msgid "social-media"
+msgstr "Sozialen Medien"
+
+#: .\templates\partials\_menu.html:31
+msgid "fintech"
+msgstr "FinTech / Wirtschaft"
+
+#: .\templates\partials\_menu.html:34
+msgid "site-performance"
+msgstr "Site-Leistung"
+
+#: .\templates\partials\_menu.html:37
+msgid "ecommerce"
+msgstr "E-Commerce"
+
+#: .\templates\partials\_menu.html:40
+msgid "crm"
+msgstr "CRM"
+
+#: .\templates\partials\_menu.html:43
+msgid "sales-performance"
+msgstr "Umsatzentwicklung"
+
+#: .\templates\partials\_menu.html:50
+msgid "layout-menu-title"
+msgstr "Grundrisse"
+
+#: .\templates\partials\_menu.html:55
+msgid "layout-light-mode"
+msgstr "Lichtmodus"
+
+#: .\templates\partials\_menu.html:58
+msgid "layout-dark-mode"
+msgstr "Dunkler Modus"
+
+#: .\templates\partials\_menu.html:61
+msgid "layout-top-menu"
+msgstr "Hauptmenü"
+
+#: .\templates\partials\_menu.html:64
+msgid "layout-side-menu"
+msgstr "Seitenmenü"
+
+#: .\templates\partials\_menu.html:67
+msgid "layout-rtl"
+msgstr "RTL"
+
+#: .\templates\partials\_menu.html:70
+msgid "layout-ltr"
+msgstr "LTR"
+
+#: .\templates\partials\_menu.html:77
+msgid "changelog-menu-title"
+msgstr "Änderungsprotokoll"
+
+#: .\templates\partials\_menu.html:87
+msgid "email-menu-title"
+msgstr "Email"
+
+#: .\templates\partials\_menu.html:92
+msgid "email-inbox"
+msgstr "Posteingang"
+
+#: .\templates\partials\_menu.html:95
+msgid "email-read"
+msgstr "E-Mail lesen"
+
+#: .\templates\partials\_menu.html:102
+msgid "chat-menu-title"
+msgstr "Plaudern"
+
+#: .\templates\partials\_menu.html:109
+msgid "ecommerce-menu-title"
+msgstr "E-Commerce"
+
+#: .\templates\partials\_menu.html:114
+msgid "ecommerce-products"
+msgstr "Produkte"
+
+#: .\templates\partials\_menu.html:117
+msgid "ecommerce-product-details"
+msgstr "Produktdetails"
+
+#: .\templates\partials\_menu.html:120
+msgid "ecommerce-product-add"
+msgstr "Produkt hinzu"
+
+#: .\templates\partials\_menu.html:123
+msgid "ecommerce-cart"
+msgstr "Wagen"
+
+#: .\templates\partials\_menu.html:126
+msgid "ecommerce-orders"
+msgstr "Aufträge"
+
+#: .\templates\partials\_menu.html:129
+msgid "ecommerce-sellers"
+msgstr "Verkäufer"
+
+#: .\templates\partials\_menu.html:132
+msgid "ecommerce-invoices"
+msgstr "Rechnungen"
+
+#: .\templates\partials\_menu.html:139
+msgid "project-menu-title"
+msgstr "Projekt"
+
+#: .\templates\partials\_menu.html:144 .\templates\partials\_menu.html:150
+msgid "project-title"
+msgstr "Projekt"
+
+#: .\templates\partials\_menu.html:147
+msgid "project-detail"
+msgstr "Projekt Details"
+
+#: .\templates\partials\_menu.html:157
+msgid "calendar-menu-title"
+msgstr "Kalender"
+
+#: .\templates\partials\_menu.html:163
+msgid "user-menu-title"
+msgstr "Benutzer"
+
+#: .\templates\partials\_menu.html:168
+msgid "user-team"
+msgstr "Mannschaft"
+
+#: .\templates\partials\_menu.html:171
+msgid "user-grid"
+msgstr "Benutzerraster"
+
+#: .\templates\partials\_menu.html:174
+msgid "user-list"
+msgstr "Benutzerliste"
+
+#: .\templates\partials\_menu.html:177
+msgid "user-grid-style"
+msgstr "Benutzerrasterstil"
+
+#: .\templates\partials\_menu.html:180
+msgid "user-group"
+msgstr "Benutzergruppe"
+
+#: .\templates\partials\_menu.html:183
+msgid "user-add"
+msgstr "Benutzer hinzufügen"
+
+#: .\templates\partials\_menu.html:186
+msgid "user-table"
+msgstr "Benutzertabelle"
+
+#: .\templates\partials\_menu.html:193
+msgid "contact-menu-title"
+msgstr "Kontakt"
+
+#: .\templates\partials\_menu.html:198
+msgid "contact-grid"
+msgstr "Kontaktliste"
+
+#: .\templates\partials\_menu.html:201 .\templates\partials\_menu.html:204
+msgid "contact-list"
+msgstr "Kontaktraster"
+
+#: .\templates\partials\_menu.html:211
+msgid "note-menu-title"
+msgstr "Notiz"
+
+#: .\templates\partials\_menu.html:217
+msgid "todo-menu-title"
+msgstr "Armaturenbrett"
+
+#: .\templates\partials\_menu.html:223
+msgid "kanban-menu-title"
+msgstr "Machen"
+
+#: .\templates\partials\_menu.html:229
+msgid "ie-menu-title"
+msgstr "Import & Export"
+
+#: .\templates\partials\_menu.html:234
+msgid "ie-import"
+msgstr "Importieren"
+
+#: .\templates\partials\_menu.html:237
+msgid "ie-export"
+msgstr "Export"
+
+#: .\templates\partials\_menu.html:240
+msgid "ie-export-selected"
+msgstr "Ausgewählt exportieren"
+
+#: .\templates\partials\_menu.html:247
+msgid "filemanager-menu-title"
+msgstr "Dateimanager"
+
+#: .\templates\partials\_menu.html:253
+msgid "task-menu-title"
+msgstr "Aufgaben-App"
+
+#: .\templates\partials\_menu.html:260
+msgid "bookmark-menu-title"
+msgstr "Lesezeichen"
+
+#: .\templates\partials\_menu.html:266
+msgid "social-menu-title"
+msgstr "Soziale App"
+
+#: .\templates\partials\_menu.html:271
+msgid "social-profile"
+msgstr "Mein Profil"
+
+#: .\templates\partials\_menu.html:274
+msgid "social-profile-setting"
+msgstr "Profileinstellungen"
+
+#: .\templates\partials\_menu.html:277
+msgid "social-timeline"
+msgstr "Zeitleiste"
+
+#: .\templates\partials\_menu.html:280
+msgid "social-activity"
+msgstr "Aktivität"
+
+#: .\templates\partials\_menu.html:287 .\templates\partials\_menu.html:702
+msgid "support-menu-title"
+msgstr "Unterstützung"
+
+#: .\templates\partials\_menu.html:292
+msgid "support-ticket"
+msgstr "Unterstüzungsticket"
+
+#: .\templates\partials\_menu.html:295
+msgid "support-ticket-detail"
+msgstr "Ticketdetails"
+
+#: .\templates\partials\_menu.html:298
+msgid "support-new-ticket"
+msgstr "Neues Ticket"
+
+#: .\templates\partials\_menu.html:305
+msgid "job-menu-title"
+msgstr "Arbeitssuche"
+
+#: .\templates\partials\_menu.html:310
+msgid "job-search"
+msgstr "Job-Suchraster"
+
+msgid "job-search-list"
+msgstr "Job-Suchliste"
+
+#: .\templates\partials\_menu.html:313
+msgid "job-detail"
+msgstr "Auftragsdetails"
+
+#: .\templates\partials\_menu.html:316
+msgid "job-apply"
+msgstr "Stellenbewerbung"
+
+#: .\templates\partials\_menu.html:323
+msgid "table-menu-title"
+msgstr "Tisch"
+
+#: .\templates\partials\_menu.html:328
+msgid "table-basic"
+msgstr "Grundlegende Tabelle"
+
+#: .\templates\partials\_menu.html:331
+msgid "table-data"
+msgstr "Datentabelle"
+
+#: .\templates\partials\_menu.html:341
+msgid "customer-crud-menu-title"
+msgstr "Kunde Crud"
+
+#: .\templates\partials\_menu.html:346
+msgid "customer-view-all"
+msgstr "Alle ansehen"
+
+#: .\templates\partials\_menu.html:349
+msgid "customer-add-new"
+msgstr "Neue hinzufügen"
+
+#: .\templates\partials\_menu.html:359
+msgid "ui-menu-title"
+msgstr "UI-Elemente"
+
+#: .\templates\partials\_menu.html:364
+msgid "ui-alert"
+msgstr "Alarmieren"
+
+#: .\templates\partials\_menu.html:367
+msgid "ui-avatar"
+msgstr "Benutzerbild"
+
+#: .\templates\partials\_menu.html:370
+msgid "ui-badge"
+msgstr "Abzeichen"
+
+#: .\templates\partials\_menu.html:373
+msgid "ui-breadcrumb"
+msgstr "Brotkrümel"
+
+#: .\templates\partials\_menu.html:376
+msgid "ui-button"
+msgstr "Taste"
+
+#: .\templates\partials\_menu.html:379
+msgid "ui-card"
+msgstr "Karten"
+
+#: .\templates\partials\_menu.html:382
+msgid "ui-carousel"
+msgstr "Karussell"
+
+#: .\templates\partials\_menu.html:385
+msgid "ui-checkbox"
+msgstr "Kontrollkästchen"
+
+#: .\templates\partials\_menu.html:388
+msgid "ui-collapse"
+msgstr "Zusammenbruch"
+
+#: .\templates\partials\_menu.html:391
+msgid "ui-comment"
+msgstr "Bemerkungen"
+
+#: .\templates\partials\_menu.html:394
+msgid "ui-dashboard-base"
+msgstr "Dashboard-Basis"
+
+#: .\templates\partials\_menu.html:397
+msgid "ui-date-picker"
+msgstr "Datumsauswahl"
+
+#: .\templates\partials\_menu.html:400
+msgid "ui-drawer"
+msgstr "Schublade"
+
+#: .\templates\partials\_menu.html:403
+msgid "ui-drag-drop"
+msgstr "Ziehen und ablegen"
+
+#: .\templates\partials\_menu.html:406
+msgid "ui-dropdown"
+msgstr "Dropdown-Liste"
+
+#: .\templates\partials\_menu.html:409
+msgid "ui-empty"
+msgstr "Leer"
+
+#: .\templates\partials\_menu.html:412
+msgid "ui-grid"
+msgstr "Netz"
+
+#: .\templates\partials\_menu.html:415
+msgid "ui-input"
+msgstr "Eingang"
+
+#: .\templates\partials\_menu.html:418
+msgid "ui-list"
+msgstr "Liste"
+
+#: .\templates\partials\_menu.html:421
+msgid "ui-menu"
+msgstr "Speisekarte"
+
+#: .\templates\partials\_menu.html:424
+msgid "ui-message"
+msgstr "Nachricht"
+
+#: .\templates\partials\_menu.html:427
+msgid "ui-modal"
+msgstr "Modale"
+
+#: .\templates\partials\_menu.html:430
+msgid "ui-notification"
+msgstr "Benachrichtigung"
+
+#: .\templates\partials\_menu.html:433
+msgid "ui-page-header"
+msgstr "Seitenkopfzeilen"
+
+#: .\templates\partials\_menu.html:436
+msgid "ui-pagination"
+msgstr "Seitenzahlen"
+
+#: .\templates\partials\_menu.html:439
+msgid "ui-progress"
+msgstr "Progress"
+
+#: .\templates\partials\_menu.html:442
+msgid "ui-radio"
+msgstr "Radio"
+
+#: .\templates\partials\_menu.html:445
+msgid "ui-rate"
+msgstr "Rate"
+
+#: .\templates\partials\_menu.html:448
+msgid "ui-result"
+msgstr "Ergebnis"
+
+#: .\templates\partials\_menu.html:451
+msgid "ui-select"
+msgstr "Auswählen"
+
+#: .\templates\partials\_menu.html:454
+msgid "ui-skeleton"
+msgstr "Skelett"
+
+#: .\templates\partials\_menu.html:457
+msgid "ui-slider"
+msgstr ""
+
+#: .\templates\partials\_menu.html:460
+msgid "ui-spinner"
+msgstr "Schieberegler"
+
+#: .\templates\partials\_menu.html:463
+msgid "ui-statistic"
+msgstr "Statistik"
+
+#: .\templates\partials\_menu.html:466
+msgid "ui-step"
+msgstr "Schritte"
+
+#: .\templates\partials\_menu.html:469
+msgid "ui-switch"
+msgstr "Schalten"
+
+#: .\templates\partials\_menu.html:472
+msgid "ui-tab"
+msgstr "Registerkarten"
+
+#: .\templates\partials\_menu.html:475
+msgid "ui-tag"
+msgstr "Stichworte"
+
+#: .\templates\partials\_menu.html:478
+msgid "ui-timeline"
+msgstr "Zeitleiste"
+
+#: .\templates\partials\_menu.html:481
+msgid "ui-timeline2"
+msgstr "Zeitlinie 2"
+
+#: .\templates\partials\_menu.html:484
+msgid "ui-timeline3"
+msgstr "Zeitleiste 3"
+
+#: .\templates\partials\_menu.html:487
+msgid "ui-time-picker"
+msgstr "Zeitnehmer"
+
+#: .\templates\partials\_menu.html:490
+msgid "ui-upload"
+msgstr "Hochladen"
+
+#: .\templates\partials\_menu.html:497
+msgid "chart-menu-title"
+msgstr "Diagramme"
+
+#: .\templates\partials\_menu.html:502
+msgid "chart-js"
+msgstr "Diagramm JS"
+
+#: .\templates\partials\_menu.html:505
+msgid "chart-google"
+msgstr "Google-Diagramme"
+
+#: .\templates\partials\_menu.html:508
+msgid "chart-peity"
+msgstr "Peity-Diagramme"
+
+#: .\templates\partials\_menu.html:515
+msgid "form-menu-title"
+msgstr "Formen"
+
+#: .\templates\partials\_menu.html:520
+msgid "form-basic"
+msgstr "Grundlagen"
+
+#: .\templates\partials\_menu.html:523
+msgid "form-layout"
+msgstr "Grundrisse"
+
+#: .\templates\partials\_menu.html:526
+msgid "form-element"
+msgstr "Elemente"
+
+#: .\templates\partials\_menu.html:529
+msgid "form-component"
+msgstr "Komponenten"
+
+#: .\templates\partials\_menu.html:532
+msgid "form-validation"
+msgstr "Validierungen"
+
+#: .\templates\partials\_menu.html:539
+msgid "widget-menu-title"
+msgstr "Widget"
+
+#: .\templates\partials\_menu.html:544
+msgid "widget-chart"
+msgstr "Diagramm"
+
+#: .\templates\partials\_menu.html:547
+msgid "widget-mixed"
+msgstr "Gemischt"
+
+#: .\templates\partials\_menu.html:550
+msgid "widget-card"
+msgstr "Karte"
+
+#: .\templates\partials\_menu.html:557
+msgid "wizard-menu-title"
+msgstr "Zauberer"
+
+#: .\templates\partials\_menu.html:562
+msgid "wizard-one"
+msgstr "Zauberer 1"
+
+#: .\templates\partials\_menu.html:565
+msgid "wizard-two"
+msgstr "Zauberer 2"
+
+#: .\templates\partials\_menu.html:568
+msgid "wizard-three"
+msgstr "Zauberer 3"
+
+#: .\templates\partials\_menu.html:571
+msgid "wizard-four"
+msgstr "Zauberer 4"
+
+#: .\templates\partials\_menu.html:574
+msgid "wizard-five"
+msgstr "Zauberer 5"
+
+#: .\templates\partials\_menu.html:581
+msgid "icon-menu-title"
+msgstr "Symbole"
+
+#: .\templates\partials\_menu.html:586
+msgid "icon-unicon"
+msgstr "Unicon-Symbole"
+
+#: .\templates\partials\_menu.html:589
+msgid "icon-awesome"
+msgstr "Schriftart genial"
+
+#: .\templates\partials\_menu.html:592
+msgid "icon-line"
+msgstr "Line Awesome"
+
+#: .\templates\partials\_menu.html:599
+msgid "editor-menu-title"
+msgstr "Editorin"
+
+#: .\templates\partials\_menu.html:605
+msgid "map-menu-title"
+msgstr "Karten"
+
+#: .\templates\partials\_menu.html:610
+msgid "map-google"
+msgstr "Google Karte"
+
+#: .\templates\partials\_menu.html:613
+msgid "map-leaflet"
+msgstr "Faltblatt Karte"
+
+#: .\templates\partials\_menu.html:616
+msgid "map-vector"
+msgstr "Vektorkarte"
+
+#: .\templates\partials\_menu.html:626
+msgid "setting-menu-title"
+msgstr "Einstellungen"
+
+#: .\templates\partials\_menu.html:632
+msgid "gallery-menu-title"
+msgstr "Galerie"
+
+#: .\templates\partials\_menu.html:637
+msgid "gallery-one"
+msgstr "Galerie 1"
+
+#: .\templates\partials\_menu.html:640
+msgid "gallery-two"
+msgstr "Galerie 2"
+
+#: .\templates\partials\_menu.html:647
+msgid "pricing-menu-title"
+msgstr "Preisgestaltung"
+
+#: .\templates\partials\_menu.html:653
+msgid "banner-menu-title"
+msgstr "Banner"
+
+#: .\templates\partials\_menu.html:659
+msgid "testimonial-menu-title"
+msgstr "Zeugnis"
+
+#: .\templates\partials\_menu.html:665
+msgid "faq-menu-title"
+msgstr "FAQs"
+
+#: .\templates\partials\_menu.html:671
+msgid "search-menu-title"
+msgstr "Suchergebnisse"
+
+#: .\templates\partials\_menu.html:677
+msgid "blank-menu-title"
+msgstr "Leere Seite"
+
+#: .\templates\partials\_menu.html:683
+msgid "knowledge-menu-title"
+msgstr "Wissensbasis"
+
+#: .\templates\partials\_menu.html:688
+msgid "knowledge-base"
+msgstr "Wissensbasis"
+
+#: .\templates\partials\_menu.html:691
+msgid "knowledge-all-article"
+msgstr "Alle Artikel"
+
+#: .\templates\partials\_menu.html:695
+msgid "knowledge-single-article"
+msgstr "Einzelner Artikel"
+
+#: .\templates\partials\_menu.html:708
+msgid "dynamic-table"
+msgstr "Dynamische Tabelle"
+
+#: .\templates\partials\_menu.html:715
+msgid "blog-menu-title"
+msgstr "Bloggen"
+
+#: .\templates\partials\_menu.html:720
+msgid "blog-style-one"
+msgstr "Blogstil 1"
+
+#: .\templates\partials\_menu.html:723
+msgid "blog-style-two"
+msgstr "Blogstil 2"
+
+#: .\templates\partials\_menu.html:726
+msgid "blog-style-three"
+msgstr "Blogstil 3"
+
+#: .\templates\partials\_menu.html:729
+msgid "blog-detail"
+msgstr "Blog-Details"
+
+#: .\templates\partials\_menu.html:736
+msgid "course-menu-title"
+msgstr "Kurs"
+
+#: .\templates\partials\_menu.html:741
+msgid "course-list"
+msgstr "Kurse"
+
+#: .\templates\partials\_menu.html:744
+msgid "course-detail"
+msgstr "Kursdetail"
+
+#: .\templates\partials\_menu.html:751
+msgid "terms-menu-title"
+msgstr "Terms & amp; Bedingungen"
+
+#: .\templates\partials\_menu.html:757
+msgid "maintenance-menu-title"
+msgstr "Instandhaltung"
+
+#: .\templates\partials\_menu.html:763
+msgid "not-found-menu-title"
+msgstr "404"
+
+#: .\templates\partials\_menu.html:769
+msgid "coming-soon-menu-title"
+msgstr "Kommt bald"
+
+#~ msgid "hello"
+#~ msgstr "Hello German"

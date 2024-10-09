@@ -1,0 +1,42 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Five {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="demo5 mt-30 mb-25">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12 mb-25">
+                    {% include 'components/dashboard/demo_five/greetings_banner.html' %}
+                </div>
+                <div class="col-xxl-8 mb-25">
+                    {% include 'components/dashboard/demo_five/user_overview.html' %}
+                </div>
+                <div class="col-xxl-4 col-lg-6 order-xxl-0 order-1 mb-25">
+                    {% include 'components/dashboard/demo_five/calendar.html' %}
+                </div>
+                <div class="col-xxl-6 mb-25">
+                    {% include 'components/dashboard/demo_five/member_progress.html' %}
+                </div>
+                <div class="col-xxl-6 mb-25">
+                    {% include 'components/dashboard/demo_five/upcoming_events.html' %}
+                </div>
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_five/knowledge_base_cta.html' %}
+                </div>
+                <div class="col-xxl-4 col-lg-6 mb-25">
+                    {% include 'components/dashboard/demo_five/timeline.html' %}
+                </div>
+                <div class="col-xxl-4 col-lg-6 mb-25">
+                    {% include 'components/dashboard/demo_five/inbox.html' %}
+                </div>
+                {% include 'components/dashboard/demo_five/blog_cards.html' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

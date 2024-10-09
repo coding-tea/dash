@@ -1,0 +1,79 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Ten {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+<div class="demo5 mt-30 mb-25">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-xxl-12 mb-25">
+                <div class="card banner-feature--18 d-flex bg-dark">
+                    <div class="d-flex align-items-center flex-sm-nowrap flex-wrap text-align-lg-0 text-align-ssm-center justify-content-sm-start justify-content-center">
+                        <div class="card-body px-md-50 px-30">
+                            <h1 class="banner-feature__heading color-white">Welcome To Demo Dashboard</h1>
+                            <p class="banner-feature__para color-white">There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form
+                            </p>
+                            <div class="d-flex justify-content-sm-start justify-content-center">
+                                <button class="banner-feature__btn btn btn-primary color-white btn-md px-20 radius-xs fs-15" type="button">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="banner-feature__shape px-md-50 px-30 py-sm-0 pt-15 pb-30">
+                            <img src="{% static 'img/demo5-banner.png' %}" alt="img" class="svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-8 mb-25">
+                {% include 'components/dashboard/demo_ten/user_overview.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 order-xxl-0 order-1">
+                <div class="card card-md border-0 mb-4 date-picker__calendar-height">
+                    <div class="card-body px-10 py-40">
+                        <div class="date-picker date-picker--demo5">
+                            <div class="date-picker__calendar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 mb-25">
+                {% include 'components/dashboard/demo_ten/member_progress.html' %}
+            </div>
+            <div class="col-xxl-6 mb-25">
+                {% include 'components/dashboard/demo_ten/upcoming_events.html' %}
+            </div>
+            <div class="col-xxl-4 mb-25">
+                <div class="card knowledge-base border-0 py-sm-30 px-sm-25 h-100">
+                    <img src="{% static 'img/book-open.png' %}" alt="book">
+                    <h1>Knowledge Base</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available
+                        but the majority have suffered alteration</p>
+                    <button type="button" class="btn btn-primary">
+                        Browse Article
+                    </button>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_ten/timeline.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_ten/inbox.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_ten/blog_one.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_ten/blog_two.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_ten/blog_three.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

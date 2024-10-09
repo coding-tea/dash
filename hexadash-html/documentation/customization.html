@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hexadash Nodejs Documentation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="css/plugin.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- endinject -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body class="layout-light side-menu">
+    <div class="mobile-search">
+        <form action="/" class="search-form">
+            <img src="img/svg/search.svg" alt="search" class="svg">
+            <input class="form-control me-sm-2 box-shadow-none" type="search" placeholder="Search..."
+                aria-label="Search">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+
+
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <div class="logo-area">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="dark" src="img/logo-dark.svg" alt="svg">
+                    </a>
+                    <a href="#" class="sidebar-toggle">
+                        <img class="svg" src="img/svg/align-center-alt.svg" alt="img"></a>
+                </div>
+                <div class="title_name">
+                    <h2>documention</h2>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="atbd-badge-list d-flex align-items-center">
+                    <span class="badge badge-round-sm badge-success badge-lg px-1">
+                        v1.1.4
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar">
+            <div class="sidebar__menu-group">
+                <ul class="sidebar_nav">
+                    <li class="menu-title mt-30">
+                        <span>GETTING STARTED</span>
+                    </li>
+                    <li>
+                        <a href="index.html" class="">
+                            <span class="nav-icon uil uil-archive"></span>
+                            <span class="menu-text">Introduction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="features.html" class="">
+                            <span class="nav-icon uil uil-setting"></span>
+                            <span class="menu-text">Features</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="folder-structure.html" class="">
+                            <span class="nav-icon uil uil-folder"></span>
+                            <span class="menu-text">Folder Structure</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="started.html" class="">
+                            <span class="nav-icon uil uil-sliders-v-alt"></span>
+                            <span class="menu-text">Getting Started</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customization.html" class="active">
+                            <span class="nav-icon uil uil-edit"></span>
+                            <span class="menu-text">Theme Customization</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rtl.html" class="">
+                            <span class="nav-icon uil uil-right-to-left-text-direction"></span>
+                            <span class="menu-text">RTL</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credits.html" class="">
+                            <span class="nav-icon uil uil-credit-card"></span>
+                            <span class="menu-text">credits</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="">
+                            <span class="nav-icon uil uil-user"></span>
+                            <span class="menu-text">support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="main-content mb-30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="breadcrumb-main">
+                                <h4 class="text-capitalize breadcrumb-title">Theme customization</h4>
+                                <div class="breadcrumb-action justify-content-center flex-wrap">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i
+                                                        class="uil uil-estate"></i>Hexadash</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Theme customization
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h4 class="card_title" id="theme_color_customization">Theme Color Customization</h4>
+                                            <p>To facilitate effortless theme color customization, we have exclusively
+                                                implemented CSS variables. The color scheme can be conveniently located
+                                                in the <strong><code>"_css-variables.scss"</code></strong> file,
+                                                residing within the
+                                                <strong><code>"src/assets/theme_assets/scss/"</code></strong> directory.
+
+                                                By modifying the values of these CSS variables, you can effortlessly
+                                                change the theme color to your preference. Access the
+                                                <strong><code>"_css-variables.scss"</code></strong> file to explore the
+                                                available color options and tailor the theme according to your desired
+                                                style.
+                                            </p>
+                                            <br>
+                                            <img class="img-fluid" src="img/variables.png">
+                                            <p class="mt-25 mb-25">In addition to customizing the regular theme color, we have also made it
+                                                possible to modify the Dark Mode theme color through the utilization of
+                                                CSS variables. These variables are conveniently located in the same
+                                                <strong><code>"_css-variables.scss"</code></strong> file, situated
+                                                within the <strong><code>"src/assets/theme_assets/scss/"</code></strong>
+                                                directory.</p>
+                                            <img class="img-fluid" src="img/layout-dark.png">
+                                            <p class="mt-15">By adjusting the relevant CSS variables in the "_css-variables.scss"
+                                                file, you can effortlessly alter the color scheme for both the regular
+                                                and Dark Mode themes to match your preferences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">Configuring Style &amp; Bootstrap Compatibility</h4>
+                                    <p></p>
+                                    <p>Instead of overriding Bootstraps components. We have made it compatible with
+                                        theme using
+                                        Bootstraps native scss varibles. And it's recommended by Bootstrap. This way we
+                                        are able to
+                                        manage leveraging decent ammount of css , as there is no overriding. And we made
+                                        it
+                                        centrally configurable with <strong><code>config.bs.scss</code></strong> file in
+                                        <strong><code>vendor_assets/css/bootstrap/</code> directory</strong>
+                                    </p>
+                                    <p></p>
+                                    <p><strong>1. config.bs.scss</strong></p>
+                                    <p>This file contains and controls all the Bootstraps default components.It also
+                                        contains the
+                                        color scheme, font, spacing and other common staff. If you want customize
+                                        anything of
+                                        Bootstrap, you can literally do it here by overriding bootstrap varibles.</p>
+
+                                    <p><strong>2. Where and to find and how to customize Bootstraps SCSS
+                                            variables</strong></p>
+                                    <p class="mb-4">Go to <code>vendor_assets/css/bootstrap/scss/_variables.scss</code>
+                                        and search
+                                        for the variable or component name. Evey components configurable property will
+                                        be avaible in
+                                        this file. You can just copy the variable form there and paste it in
+                                        config.bs.scss removing
+                                        the default flag and assigning a new value. For Example, here I've redefined
+                                        color scheme
+                                        for this theme: </p>
+                                    <img src="img/16.jpg">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">Update Logo</h4>
+                                    <p>How to change logo</p>
+                                    <img class="img-fluid" src="img/logo-setup.png" alt="">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">Dark &amp; Light Layout</h4>
+                                    <p>To set the layout to dark or light just change the body class to <strong
+                                            class="text-danger">layout-dark</strong> for dark layout and <strong
+                                            class="text-danger">layout-light</strong> for light layout</p>
+                                    <img class="img-fluid" src="img/dark-light.png" alt="">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">Navigation Structure</h4>
+                                    <p class="mt-4">Change the navigation according to your content, also you can add or
+                                        remove
+                                        according to your needs.</p>
+                                    <img class="img-fluid" src="img/nav.png" alt="">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">For Favicon icon</h4>
+                                    <p>Favicon is an icon associated with the URL that is displayed at various places,
+                                        such as in a
+                                        browser’s address bar or next to the site name in a bookmark list. <br>
+
+                                        You can add a Favicon to your Website using the following code:</p>
+                                    <img src="img/fav.png" alt="">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">For Changing Fonts</h4>
+                                    <p>You can add/change the site font, from all fonts used from <span
+                                            class="text-danger">Google
+                                            Web Font Services</span>, with the one that suits you the best. You can find
+                                        the font
+                                        link in top of the Style.css in all HTML file. See example below:</p>
+                                    <img src="img/font.png" alt="">
+                                </div>
+                            </div>
+                            <!-- ends: .card -->
+                        </div><!-- ends: .col-12 -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="footer-wrapper__inside">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-copyright">
+                                <p>© 2023<a href="#">Sovware</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-menu text-end">
+                                <ul>
+                                    <li>
+                                        <a href="https://dashboardmarket.com/custom-project/">Hire us</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://themeforest.net/item/hexadash-svelte-multipurpose-admin-dashboard-template/42355059/support">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ends: .Footer Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <div class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <div class="customizer-overlay"></div>
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <!-- endinject-->
+</body>
+
+</html>

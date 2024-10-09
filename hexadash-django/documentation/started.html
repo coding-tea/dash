@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HexaDash Django Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body class="layout-light side-menu">
+    <div class="mobile-search">
+        <form action="/" class="search-form">
+            <img src="img/svg/search.svg" alt="search" class="svg">
+            <input class="form-control me-sm-2 box-shadow-none" type="search" placeholder="Search..." aria-label="Search">
+        </form>
+    </div>
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <div class="logo-area">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="dark" src="img/logo-dark.svg" alt="svg">
+                        <img class="light" src="img/logo_white.svg" alt="img">
+                    </a>
+                    <a href="#" class="sidebar-toggle">
+                        <img class="svg" src="img/svg/align-center-alt.svg" alt="img"></a>
+                </div>
+                <div class="title_name">
+                    <h2>documention</h2>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="atbd-badge-list d-flex align-items-center">
+                    <span class="badge badge-round-sm badge-success badge-lg px-1">
+                        v1.0
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="sidebar__menu-group">
+                <ul class="sidebar_nav">
+                    <li class="menu-title mt-30">
+                        <span>GETTING STARTED</span>
+                    </li>
+                    <li>
+                        <a href="index.html" class="">
+                            <span class="nav-icon uil uil-archive"></span>
+                            <span class="menu-text">Introduction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="features.html" class="">
+                            <span class="nav-icon uil uil-setting"></span>
+                            <span class="menu-text">Features</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="folder-structure.html" class="">
+                            <span class="nav-icon uil uil-folder"></span>
+                            <span class="menu-text">Folder Structure</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="started.html" class="active">
+                            <span class="nav-icon uil uil-sliders-v-alt"></span>
+                            <span class="menu-text">Getting Started</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customization.html" class="">
+                            <span class="nav-icon uil uil-edit"></span>
+                            <span class="menu-text">Theme Customization</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credits.html" class="">
+                            <span class="nav-icon uil uil-credit-card"></span>
+                            <span class="menu-text">credits</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="">
+                            <span class="nav-icon uil uil-user"></span>
+                            <span class="menu-text">support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="contents">
+            <div class="main-content mb-30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-main">
+                                <h4 class="text-capitalize breadcrumb-title">Installation</h4>
+                                <div class="breadcrumb-action justify-content-center flex-wrap">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil uil-estate"></i>HexaDash</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Installation</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h4 class="card_title">Installation</h4>
+                                    <p>To setup the HexaDash in local environment, follow below-mentioned
+                                        steps:</p>
+                                     <p><strong>Install Prerequisites</strong></p>
+                                     <p>Make sure to have all above prerequisites installed & running on your computer.</p>
+                                     <p><strong class="d-block">Prerequisites</strong> </p>
+                                    <p>Django has a set of <strong> <a
+                                            href="https://docs.djangoproject.com/en/4.0/"
+                                            target="_blank"> requirements </a></strong> in order to run smoothly in specific
+                                        environment. Please see requirements section in Django documentation.</p>
+                                    <p>Please follow below steps to install and setup all prerequisites:</p>
+                                    <ul class="card_list">
+                                        <li><strong>XAMPP</strong>
+                                            <p>Make sure to have the <strong><a
+                                                    href="https://www.apachefriends.org/download.html">XAMPP</a> </strong>
+                                            installed & running in your computer. If you already have installed Xampp on your
+                                            computer, you can skip this step if your existing xampp version is 7.4 or greater
+                                            than.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <strong>Pip3</strong>
+                                            <p>You wil get pip3 with the django installation</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-30">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card_title">After you finished with the above steps, you can run the following
+                                        commands to run the Django Admin Dashboard in local environment:</h5>
+                                     <table class="table table-bordered">
+                                        <thead>
+                                           <tr>
+                                              <th style="width: 20%;" scope="col">Command</th>
+                                              <th scope="col">Description</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td scope="row"><code>pip3 install django</code></td>
+                                              <td>command to install all of the framework's dependencies.</td>
+                                           </tr>
+                                           <tr>
+                                              <td scope="row"><code>settings.py</code></td>
+                                              <td>You will get all the settings here</td>
+                                           </tr>
+                                           <tr>
+                                              <td scope="row" colspan="2">
+                                                 <p><strong>Please fill your DB credentials in the settings.py file.</strong></p>
+                                                 <div class="custom-pre">
+                                                    DATABASES = {</br>
+                                                        &nbsp;&nbsp;&nbsp;'default': {</br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ENGINE': 'django.db.backends.mysql',</br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'NAME': 'django-hexadash',</br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'USER': 'root',</br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'PASSWORD': '',</br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'HOST':'127.0.0.1'</br>
+                                                            &nbsp;&nbsp;&nbsp;}</br>
+                                                    }
+                                                 </div>
+                                              </td>
+                                           </tr>
+                                           <tr>
+                                              <td><code>Migration</code></td>
+                                              <td>
+                                                 This will migrate the database tables. For more details visit <a
+                                                    href="https://docs.djangoproject.com/en/4.0/topics/migrations/"
+                                                    target="_blank">https://docs.djangoproject.com/en/4.0/topics/migrations/ </a>
+                                              </td>
+                                           </tr>
+                                           <tr>
+                                              <td>
+                                                 <code>Xampp Start</code>
+                                              </td>
+                                              <td>
+                                                 Xampp start the connection of mysql database.
+                                              </td>
+                                           </tr>
+                                           <tr>
+                                              <td>
+                                                 <code>python manage.py runserver</code>
+                                              </td>
+                                              <td>
+                                                 Navigate to generated server url <a href="#"
+                                                    target="_blank">http://127.0.0.1:8000</a>
+                                              </td>
+                                           </tr>
+                                        </tbody>
+                                     </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-wrapper">
+            <div class="footer-wrapper__inside">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-copyright">
+                                <p>@ 2022<a href="#">Sovware</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-menu text-end">
+                                <ul>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <div class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <div class="customizer-overlay"></div>
+    <div class="customizer-wrapper">
+        <div class="customizer">
+            <div class="customizer__head">
+                <h4 class="customizer__title">Customizer</h4>
+                <span class="customizer__sub-title">Customize your overview page layout</span>
+                <a href="#" class="customizer-close">
+                    <img class="svg" src="img/svg/x2.svg" alt="">
+                </a>
+            </div>
+            <div class="customizer__body">
+                <div class="customizer__single">
+                    <h4>Layout Type</h4>
+                    <ul class="customizer-list d-flex layout">
+                        <li class="customizer-list__item">
+                            <a href="../ltr" class="active">
+                                <img src="img/ltr.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                        <li class="customizer-list__item">
+                            <a href="../rtl" class="">
+                                <img src="img/rtl.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customizer__single">
+                    <h4>Sidebar Type</h4>
+                    <ul class="customizer-list d-flex l_sidebar">
+                        <li class="customizer-list__item">
+                            <a href="#" data-layout="light" class="dark-mode-toggle active">
+                                <img src="img/light.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                        <li class="customizer-list__item">
+                            <a href="#" data-layout="dark" class="dark-mode-toggle">
+                                <img src="img/dark.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customizer__single">
+                    <h4>Navbar Type</h4>
+                    <ul class="customizer-list d-flex l_navbar">
+                        <li class="customizer-list__item">
+                            <a href="#" data-layout="side" class="active">
+                                <img src="img/side.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                        <li class="customizer-list__item top">
+                            <a href="#" data-layout="top">
+                                <img src="img/top.png" alt="">
+                                <i class="fa fa-check-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Three {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="demo3 mb-25 t-thead-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb-main">
+                        <h4 class="text-capitalize breadcrumb-title">{% translate "dashboard-menu-title" %}</h4>
+                        <div class="breadcrumb-action justify-content-center flex-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "dashboard-menu-title" %}</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">{% translate "dashboard-demo-three" %}</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-7 mb-25">
+                    {% include 'components/dashboard/demo_three/monthly_earning.html' %}
+                </div>
+
+                <div class="col-xxl-5 mb-25">
+                    {% include 'components/dashboard/demo_three/profit_growth.html' %}
+                </div>
+
+                <div class="col-12 mb-25">
+                    {% include 'components/dashboard/demo_three/overview_data.html' %}
+                </div>
+
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_three/sales_overview.html' %}
+                </div>
+
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_three/top_products.html' %}
+                </div>
+
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_three/latest_transections.html' %}
+                </div>
+
+                <div class="col-12 mb-25">
+                    {% include 'components/dashboard/demo_three/active_users.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

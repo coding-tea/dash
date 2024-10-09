@@ -1,0 +1,50 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Two {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="demo2 mb-25 t-thead-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb-main">
+                        <h4 class="text-capitalize breadcrumb-title">{% translate "dashboard-menu-title" %}</h4>
+                        <div class="breadcrumb-action justify-content-center flex-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "dashboard-menu-title" %}</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">{% translate "dashboard-demo-two" %}</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-12">
+                    {% include 'components/dashboard/demo_two/overview_data.html' %}
+                </div>
+
+                <div class="col-xxl-6 mb-25">
+                    {% include 'components/dashboard/demo_two/sales_revenue.html' %}
+                </div>
+
+                <div class="col-xxl-6 mb-25">
+                    {% include 'components/dashboard/demo_two/revenue_source.html' %}
+                </div>
+
+                <div class="col-xxl-4 mb-25">
+                    {% include 'components/dashboard/demo_two/new_product.html' %}
+                </div>
+
+                <div class="col-xxl-8 mb-25">
+                    {% include 'components/dashboard/demo_two/best_seller.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

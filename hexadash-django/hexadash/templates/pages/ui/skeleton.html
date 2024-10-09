@@ -1,0 +1,46 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Skeleton {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+<div class="dm-page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-main">
+                    <h4 class="text-capitalize breadcrumb-title">{% translate "ui-skeleton" %}</h4>
+                    <div class="breadcrumb-action justify-content-center flex-wrap">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "ui-menu-title" %}</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{% translate "ui-skeleton" %}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-default card-md mb-4">
+                    <div class="card-header py-20">
+                        <h6>Skeleton</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="dm-skeleton">
+                            <div class="h6 dm-skeleton__title shimmer-effect"></div>
+                            <ul class="dm-skeleton__list">
+                                <li class="shimmer-effect"></li>
+                                <li class="shimmer-effect"></li>
+                                <li class="shimmer-effect"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+/Lib
+/env
+.idea
+vercel.json
+requirements.txt

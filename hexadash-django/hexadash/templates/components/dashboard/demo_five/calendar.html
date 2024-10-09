@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="card card-md border-0 mb-4 date-picker__calendar-height h-100">
+    <div class="card-header py-md-0">
+        <h6>Calendar 2023</h6>
+        <div class="dropdown dropleft">
+            <a href="#" role="button" id="Today" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="{% static 'img/svg/more-horizontal.svg' %}" alt="more-horizontal" class="svg">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="Today">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body px-10">
+        <div class="date-picker date-picker--demo5 new">
+            <div class="date-picker__calendar"></div>
+        </div>
+    </div>
+</div>

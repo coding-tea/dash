@@ -1,0 +1,173 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} New Customer {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="contact-breadcrumb">
+
+                <div class="breadcrumb-main add-contact justify-content-sm-between ">
+                    <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                        <div class="d-flex align-items-center add-contact__title justify-content-center me-sm-25">
+                            <h4 class="text-capitalize fw-500 breadcrumb-title">Add User</h4>
+                            <span class="sub-title ms-sm-25 ps-sm-25"></span>
+                        </div>
+                        <div class="action-btn mt-sm-0 mt-15">
+                            <a href="{% url 'customer:customer_list' %}" class="btn px-20 btn-primary ">
+                                View All
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- ends: contact-breadcrumb -->
+        </div>
+    </div>
+    <div class="card mb-50">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-10">
+                <div class="mt-40 mb-50">
+                    <div class="account-profile d-flex align-items-center mb-4 ">
+                        <div class="ap-img pro_img_wrapper">
+                            <input id="file-upload" type="file" name="fileUpload" class="d-none">
+                            <!-- Profile picture image-->
+                            <label for="file-upload">
+                                <img class="ap-img__main rounded-circle wh-120 bg-lighter d-flex" id="previewImg" src="{% static 'img/author/profile.png' %}" alt="profile">
+                                <span class="cross" id="remove_pro_pic">
+                                    <img src="{% static 'img/svg/camera.svg' %}" alt="camera" class="svg">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="account-profile__title">
+                            <h6 class="fs-15 ms-20 fw-500 text-capitalize">profile photo</h6>
+                        </div>
+                    </div>
+                    <div class="edit-profile__body">
+                        <form action="{% url 'customer:store' %}" method="POST">
+                            {% csrf_token %}
+                            
+                            <input type="hidden" id="image" name="image" value="">
+                            <div class="form-group mb-25">
+                                <label for="name">name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Duran Clayton">
+                                {% if form and form.errors.name %} <div class="text-danger mt-2">{{form.errors.name}}</div> {% else %} {% endif %} 
+                            </div>
+                            <div class="form-group mb-25">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="sample@email.com">
+                                {% if form and form.errors.email %} <div class="text-danger mt-2">{{form.errors.email}}</div> {% else %} {% endif %}                                                        
+                            </div>
+                            <div class="form-group mb-25">
+                                <label for="phone">phone number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+440 2546 5236">  
+                                {% if form and form.errors.phone %} <div class="text-danger mt-2">{{form.errors.phone}}</div> {% else %} {% endif %}                               
+                            </div>
+                            <div class="form-group mb-25">
+                                <div class="countryOption">
+                                    <label for="countryOption">
+                                        country <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="js-example-basic-single js-states form-control" id="countryOption" name="countryOption">
+                                        <option value="">Select Country</option>
+                                        <option value="Bangladash">Bangladash</option>
+                                        <option value="India">India</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                    </select>   
+                                    {% if form and form.errors.countryOption %} <div class="text-danger mt-2">{{form.errors.countryOption}}</div> {% else %} {% endif %}   
+                                </div> 
+                            </div>
+                            <div class="form-group mb-25">
+                                <div class="cityOption">
+                                    <label for="cityOption">
+                                        City 
+                                    </label>
+                                    <select class="js-example-basic-single js-states form-control" id="cityOption" name="cityOption">
+                                        <option value="">Select City</option>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Barisal">Barisal</option>
+                                        <option value="Sylet">Sylet</option>
+                                    </select>   
+                                    {% if form and form.errors.cityOption %} <div class="text-danger mt-2">{{form.errors.cityOption}}</div> {% else %} {% endif %}                              
+                                </div>                               
+                            </div>
+                            <div class="form-group mb-25">
+                                <label for="company">Company name </label>
+                                <input type="text" class="form-control" id="company" name="company" placeholder="Example">
+                                {% if form and form.errors.company %} <div class="text-danger mt-2">{{form.errors.company}}</div> {% else %} {% endif %} 
+                            </div>
+                            <div class="form-group mb-25">
+                                <label for="position">Position</label>
+                                <input type="text" class="form-control" id="position" name="position" placeholder="Position">   
+                                {% if form and form.errors.position %} <div class="text-danger mt-2">{{form.errors.position}}</div> {% else %} {% endif %}                              
+                            </div>
+                            <div class="form-group mb-25 form-group-calender">
+                                <label for="datepicker">Joining Date</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" id="datepicker" name="join" placeholder="Select date">
+                                    <a href="#"><img class="svg" src="{% static 'img/svg/calendar.svg' %}" alt="calendar"></a>
+                                    {% if form and form.errors.join %} <div class="text-danger mt-2">{{form.errors.join}}</div> {% else %} {% endif %} 
+                                </div>                                
+                            </div>
+                            <div class="form-group mb-25 status-radio">
+                                <label class="mb-15" for="phoneNumber2">status</label>
+                                <div class="d-flex">
+                                    <div class="radio-horizontal-list d-flex flex-wrap">
+                                        <div class="radio-theme-default custom-radio ">
+                                            <input class="radio" type="radio" checked name="status" value="active" id="radio-hl1">
+                                            <label for="radio-hl1">
+                                                <span class="radio-text">active</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-theme-default custom-radio ">
+                                            <input class="radio" type="radio" name="status" value="deactivate" id="radio-hl2">
+                                            <label for="radio-hl2">
+                                                <span class="radio-text">Deactivated</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-theme-default custom-radio ">
+                                            <input class="radio" type="radio" name="status" value="blocked" id="radio-hl3">
+                                            <label for="radio-hl3">
+                                                <span class="radio-text">bloked</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-group d-flex pt-25 justify-content-md-end justify-content-start">
+                                <button class="btn btn-primary btn-default btn-squared text-capitalize radius-md shadow2 btn-sm">Submit
+                                </button>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                      
+</div>
+<script>
+    var getImg = document.getElementById('file-upload');
+
+    function openFile (file) {
+        var input = file.target;
+
+        var reader = new FileReader();
+        reader.onload = function(){
+            var dataURL = reader.result;      
+            document.getElementById('previewImg').src = dataURL;              
+            document.getElementById('image').value = dataURL;              
+        };
+        reader.readAsDataURL(input.files[0]);
+    };
+    
+    getImg.addEventListener('change', openFile)
+</script>
+
+{% endblock %}

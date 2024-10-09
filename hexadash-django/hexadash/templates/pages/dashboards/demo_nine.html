@@ -1,0 +1,92 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Demo Nine {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+<div class="demo4">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="breadcrumb-main">
+                    <h4 class="text-capitalize breadcrumb-title">{% translate "dashboard-menu-title" %}</h4>
+                    <div class="breadcrumb-action justify-content-center flex-wrap">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "dashboard-menu-title" %}</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{% translate "Demo Nine" %}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                <div class="card banner-feature banner-feature--5 mb-0">
+                    <div class="banner-feature__shape">
+                        <img src="{% static 'img/svg/group3320.svg' %}" alt="img" class="svg">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="card-body">
+                            <h1 class="banner-feature__heading color-white">Congratulations Jhon!</h1>
+                            <p class="banner-feature__para ">Best Seller on the last month.</p>
+                            <button class="banner-feature__btn btn color-secondary btn-md px-20 bg-white radius-xs fs-15" type="button">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                <div class="device-chart-box">
+                    {% include 'components/dashboard/demo_nine/performance_overview.html' %}
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-12 mb-25">
+                <div class="row">
+                    <div class="col-md-6">
+                        {% include 'components/dashboard/demo_nine/total_products.html' %}
+                    </div>
+                    <div class="col-md-6">
+                        {% include 'components/dashboard/demo_nine/total_awards.html' %}
+                    </div>
+                    <div class="col-12 mt-25">
+                        {% include 'components/dashboard/demo_nine/newsletter.html' %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-8 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_nine/tasks.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_nine/marketing_campaigns.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_nine/todo.html' %}
+            </div>
+            <div class="col-xxl-4 col-lg-6 mb-25">
+                {% include 'components/dashboard/demo_nine/team_members.html' %}
+            </div>
+            <div class="col-xxl-4 col-xl-6 mb-25">
+                {% include 'components/dashboard/demo_nine/profile.html' %}
+            </div>
+            <div class="col-xxl-4 mb-25">
+                {% include 'components/dashboard/demo_nine/chat.html' %}
+            </div>
+            <div class="col-xxl-8 mb-25">
+                <div class="row">
+                    <div class="col-xxl-6 mb-25">
+                        {% include 'components/dashboard/demo_nine/social_media_traffic.html' %}
+                    </div>
+                    <div class="col-xxl-6 mb-25">
+                        {% include 'components/dashboard/demo_nine/location.html' %}
+                    </div>
+                    <div class="col-xxl-12 mb-25">
+                        {% include 'components/dashboard/demo_nine/recent_seller.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,2325 @@
+{% load i18n %} {% load static %} {% with request.resolver_match.url_name as
+path_name %}
+
+<nav class="navbar navbar-light">
+    <div class="navbar-left">
+        <div class="logo-area">
+            <a class="navbar-brand" href="{% url 'dashboard:demo_one' %}">
+                <img
+                    class="dark"
+                    src="{% static 'img/logo_dark.svg' %}"
+                    alt="svg"
+                />
+                <img
+                    class="light"
+                    src="{% static 'img/logo_white.svg' %}"
+                    alt="img"
+                />
+            </a>
+            <a href="#" class="sidebar-toggle">
+                <img
+                    class="svg"
+                    src="{% static 'img/svg/align-center-alt.svg' %}"
+                    alt="img"
+            /></a>
+        </div>
+        <div class="top-menu">
+            <div class="hexadash-top-menu position-relative">
+                <ul>
+                    <li class="has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if '/dashboard/' in request.path %}active{% endif %}"
+                        >
+                            <span class="menu-text"
+                                >{% translate "dashboard-menu-title" %}</span
+                            >
+                        </a>
+                        <ul class="subMenu">
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_one' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_one' %}"
+                                    >{% translate "dashboard-demo-one" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_two' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_two' %}"
+                                    >{% translate "dashboard-demo-two" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_three' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_three' %}"
+                                    >{% translate "dashboard-demo-three" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_four' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_four' %}"
+                                    >{% translate "dashboard-demo-four" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_five' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_five' %}"
+                                    >{% translate "dashboard-demo-five" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_six' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_six' %}"
+                                    >{% translate "Demo 6" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_seven' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_seven' %}"
+                                    >{% translate "Demo 7" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_eight' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_eight' %}"
+                                    >{% translate "Demo 8" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_nine' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_nine' %}"
+                                    >{% translate "Demo 9" %}</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="{% if path_name == 'demo_ten' %}active{% endif %}"
+                                    href="{% url 'dashboard:demo_ten' %}"
+                                    >{% translate "Demo 10" %}</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-subMenu">
+                        <a href="#" class="">Layouts</a>
+                        <ul class="subMenu">
+                            <li class="l_sidebar">
+                                <a href="#" data-layout="light">Light Mode</a>
+                            </li>
+                            <li class="l_sidebar">
+                                <a href="#" data-layout="dark">Dark Mode</a>
+                            </li>
+                            <li class="l_navbar">
+                                <a href="#" data-layout="side">Side Menu</a>
+                            </li>
+                            <li class="layout">
+                                <a href="{% url 'change_dir:rtl' %}">RTL</a>
+                            </li>
+                            <li class="layout">
+                                <a href="{% url 'change_dir:ltr' %}">LTR</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if '/application/email/' in request.path or '/application/contact/' in request.path or '/application/user/' in request.path or '/application/project/' in request.path or '/application/import_export/' in request.path or path_name == 'calendar' or path_name == 'kanban' or path_name == 'filemanager' or path_name == 'task' or path_name == 'bookmark' or path_name == 'note' or '/application/social/' in request.path or '/application/table/' in request.path or '/application/job/' in request.path or '/application/support/' in request.path or path_name == 'todo' or path_name == 'chat' or '/application/ecommerce/' in request.path %}active{% endif %}"
+                            >Apps</a
+                        >
+                        <ul class="megaMenu-wrapper megaMenu-dropdown">
+                            <li>
+                                <ul>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/email/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-envelope"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "email-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'inbox' %}active{% endif %}"
+                                                    href="{% url 'application:inbox' %}"
+                                                    >{% translate "email-inbox"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'read' %}active{% endif %}"
+                                                    href="{% url 'application:read' %}"
+                                                    >{% translate "email-read"
+                                                    %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:chat' %}"
+                                            class="{% if path_name == 'chat' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-chat"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "chat-menu-title"
+                                                %}</span
+                                            >
+                                            <span
+                                                class="badge badge-success menuItem rounded-circle"
+                                                >3</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/ecommerce/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-bag"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "ecommerce-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:products' %}"
+                                                    class="{% if path_name == 'products' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-products" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:product_details' %}"
+                                                    class="{% if path_name == 'product_details' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-product-details"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:product_add' %}"
+                                                    class="{% if path_name == 'product_add' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-product-add"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:cart' %}"
+                                                    class="{% if path_name == 'cart' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-cart" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:orders' %}"
+                                                    class="{% if path_name == 'orders' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-orders" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:sellers' %}"
+                                                    class="{% if path_name == 'sellers' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-sellers" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:invoices' %}"
+                                                    class="{% if path_name == 'invoices' %}active{% endif %}"
+                                                    >{% translate
+                                                    "ecommerce-invoices" %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/project/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-folder"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "project-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:project_list' %}"
+                                                    class="{% if path_name == 'project_list' %}active{% endif %}"
+                                                    >{% translate
+                                                    "project-title" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:project_details' %}"
+                                                    class="{% if path_name == 'project_details' %}active{% endif %}"
+                                                    >{% translate
+                                                    "project-detail" %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:calendar' %}"
+                                            class="{% if path_name == 'calendar' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-calendar-alt"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "calendar-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/user/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-users-alt"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "user-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:team' %}"
+                                                    class="{% if path_name == 'team' %}active{% endif %}"
+                                                    >{% translate "user-team"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:card' %}"
+                                                    class="{% if path_name == 'card' %}active{% endif %}"
+                                                    >{% translate "user-grid"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:list' %}"
+                                                    class="{% if path_name == 'list' %}active{% endif %}"
+                                                    >{% translate "user-list"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:grid' %}"
+                                                    class="{% if path_name == 'grid' %}active{% endif %}"
+                                                    >{% translate
+                                                    "user-grid-style" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:group' %}"
+                                                    class="{% if path_name == 'group' %}active{% endif %}"
+                                                    >{% translate "user-group"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:add' %}"
+                                                    class="{% if path_name == 'add' %}active{% endif %}"
+                                                    >{% translate "user-add"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:table' %}"
+                                                    class="{% if path_name == 'table' %}active{% endif %}"
+                                                    >{% translate "user-table"
+                                                    %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/contact/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-at"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "contact-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'contact_grid' %}active{% endif %}"
+                                                    href="{% url 'application:contact_grid' %}"
+                                                    >{% translate "contact-grid"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'contact_list' %}active{% endif %}"
+                                                    href="{% url 'application:contact_list' %}"
+                                                    >{% translate "contact-list"
+                                                    %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:note' %}"
+                                            class="{% if path_name == 'note' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-clipboard-notes"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "note-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:todo' %}"
+                                            class="{% if path_name == 'todo' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-check-square"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "todo-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:kanban' %}"
+                                            class="{% if path_name == 'kanban' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-expand-arrows"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "kanban-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/import_export/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-exchange"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "ie-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'import_page' %}active{% endif %}"
+                                                    href="{% url 'application:import_page' %}"
+                                                    >{% translate "ie-import"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'export_page' %}active{% endif %}"
+                                                    href="{% url 'application:export_page' %}"
+                                                    >{% translate "ie-export"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'export_selected' %}active{% endif %}"
+                                                    href="{% url 'application:export_selected' %}"
+                                                    >{% translate
+                                                    "ie-export-selected" %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:filemanager' %}"
+                                            class="{% if path_name == 'filemanager' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-repeat"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "filemanager-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:task' %}"
+                                            class="{% if path_name == 'task' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-lightbulb-alt"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "task-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'application:bookmark' %}"
+                                            class="{% if path_name == 'bookmark' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-bookmark"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "bookmark-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/social/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-apps"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "social-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li class="nav-item">
+                                                <a
+                                                    href="{% url 'application:profile' %}"
+                                                    class="{% if path_name == 'profile' %}active{% endif %}"
+                                                    >{% translate
+                                                    "social-profile" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:profile_settings' %}"
+                                                    class="{% if path_name == 'profile_settings' %}active{% endif %}"
+                                                    >{% translate
+                                                    "social-profile-setting"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                                    class="{% if path_name == 'timeline' %}active{% endif %}"
+                                                    href="{% url 'application:timeline' %}"
+                                                    >{% translate
+                                                    "social-timeline" %}</a
+                                                >
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                                    class="{% if path_name == 'activity' %}active{% endif %}"
+                                                    href="{% url 'application:activity' %}"
+                                                    >{% translate
+                                                    "social-activity" %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/support/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-user"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "support-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'ticket' %}active{% endif %}"
+                                                    href="{% url 'application:ticket' %}"
+                                                    >{% translate
+                                                    "support-ticket" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'ticket_details' %}active{% endif %}"
+                                                    href="{% url 'application:ticket_details' %}"
+                                                    >{% translate
+                                                    "support-ticket-detail"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'new_ticket' %}active{% endif %}"
+                                                    href="{% url 'application:new_ticket' %}"
+                                                    >{% translate
+                                                    "support-new-ticket" %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/job/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-search"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "job-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'job_search' %}active{% endif %}"
+                                                    href="{% url 'application:job_search' %}"
+                                                    >{% translate "job-search"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'job_search_list' %}active{% endif %}"
+                                                    href="{% url 'application:job_search_list' %}"
+                                                    >{% translate
+                                                    "job-search-list" %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'job_details' %}active{% endif %}"
+                                                    href="{% url 'application:job_details' %}"
+                                                    >{% translate "job-detail"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="{% if path_name == 'job_apply' %}active{% endif %}"
+                                                    href="{% url 'application:job_apply' %}"
+                                                    >{% translate "job-apply"
+                                                    %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-subMenu-left">
+                                        <a
+                                            href="#"
+                                            class="{% if '/application/table/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-table"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "table-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:basic_table' %}"
+                                                    class="{% if path_name == 'basic_table' %}active{% endif %}"
+                                                    >{% translate "table-basic"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:datatable' %}"
+                                                    class="{% if path_name == 'datatable' %}active{% endif %}"
+                                                    >{% translate "table-data"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'application:dynamic_table' %}"
+                                                    class="{% if path_name == 'dynamic_table' %}active{% endif %}"
+                                                >
+                                                    {% translate "dynamic-table"
+                                                    %}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if '/customer/' in request.path %}active{% endif %}"
+                            >Crud</a
+                        >
+                        <ul class="subMenu">
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/customer/' in request.path %}active{% endif %}"
+                                >
+                                    <span
+                                        class="nav-icon uil uil-database"
+                                    ></span>
+                                    <span class="menu-text"
+                                        >{% translate "customer-crud-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'customer_list' %}active{% endif %}"
+                                            href="{% url 'customer:customer_list' %}"
+                                            >{% translate "customer-view-all"
+                                            %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'new_customer' %}active{% endif %}"
+                                            href="{% url 'customer:new_customer' %}"
+                                            >{% translate "customer-add-new"
+                                            %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if path_name == 'editor' or '/pages/knowledge/' in request.path or '/feature/wizard/' in request.path or '/feature/widget/' in request.path or '/feature/map/' in request.path or '/feature/form/' in request.path or '/feature/chart/' in request.path or '/feature/icon/' in request.path %}active{% endif %}"
+                            >Features</a
+                        >
+                        <ul class="subMenu">
+                            <li>
+                                <a
+                                    href="{% url 'feature:editor' %}"
+                                    class="{% if path_name == 'editor' %}active{% endif %}"
+                                >
+                                    <span class="nav-icon uil uil-edit"></span>
+                                    <span class="menu-text"
+                                        >{% translate "editor-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/icon/' in request.path %}active{% endif %}"
+                                >
+                                    <span class="nav-icon uil uil-grid"></span>
+                                    <span class="menu-text"
+                                        >{% translate "icon-menu-title" %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:unicon' %}"
+                                            class="{% if path_name == 'unicon' %}active{% endif %}"
+                                            >{% translate "icon-unicon" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:fontawesome' %}"
+                                            class="{% if path_name == 'fontawesome' %}active{% endif %}"
+                                            >{% translate "icon-awesome" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:lineawesome' %}"
+                                            class="{% if path_name == 'lineawesome' %}active{% endif %}"
+                                            >{% translate "icon-line" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/chart/' in request.path %}active{% endif %}"
+                                >
+                                    <span class="nav-icon uil uil-chart"></span>
+                                    <span class="menu-text"
+                                        >{% translate "chart-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'chartjs' %}active{% endif %}"
+                                            href="{% url 'feature:chartjs' %}"
+                                            >{% translate "chart-js" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'google' %}active{% endif %}"
+                                            href="{% url 'feature:google' %}"
+                                            >{% translate "chart-google" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'apexchart' %}active{% endif %}"
+                                            href="{% url 'feature:apexchart' %}"
+                                            >{% translate "apexchart" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'peity' %}active{% endif %}"
+                                            href="{% url 'feature:peity' %}"
+                                            >{% translate "chart-peity" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/form/' in request.path %}active{% endif %}"
+                                >
+                                    <span
+                                        class="nav-icon uil uil-keyhole-circle"
+                                    ></span>
+                                    <span class="menu-text"
+                                        >{% translate "form-menu-title" %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'basic' %}active{% endif %}"
+                                            href="{% url 'feature:basic' %}"
+                                            >{% translate "form-basic" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'layouts' %}active{% endif %}"
+                                            href="{% url 'feature:layouts' %}"
+                                            >{% translate "form-layout" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'element' %}active{% endif %}"
+                                            href="{% url 'feature:element' %}"
+                                            >{% translate "form-element" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'component' %}active{% endif %}"
+                                            href="{% url 'feature:component' %}"
+                                            >{% translate "form-component" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'validation' %}active{% endif %}"
+                                            href="{% url 'feature:validation' %}"
+                                            >{% translate "form-validation"
+                                            %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/map/' in request.path %}active{% endif %}"
+                                >
+                                    <span class="nav-icon uil uil-map"></span>
+                                    <span class="menu-text"
+                                        >{% translate "map-menu-title" %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:google_map' %}"
+                                            class="{% if path_name == 'google_map' %}active{% endif %}"
+                                            >{% translate "map-google" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:leaflet_map' %}"
+                                            class="{% if path_name == 'leaflet_map' %}active{% endif %}"
+                                            >{% translate "map-leaflet" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:vector_map' %}"
+                                            class="{% if path_name == 'vector_map' %}active{% endif %}"
+                                            >{% translate "map-vector" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/widget/' in request.path %}active{% endif %}"
+                                >
+                                    <span
+                                        class="nav-icon uil uil-server"
+                                    ></span>
+                                    <span class="menu-text"
+                                        >{% translate "widget-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'chart' %}active{% endif %}"
+                                            href="{% url 'feature:chart' %}"
+                                            >{% translate "widget-chart" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'mixed' %}active{% endif %}"
+                                            href="{% url 'feature:mixed' %}"
+                                            >{% translate "widget-mixed" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'card' %}active{% endif %}"
+                                            href="{% url 'feature:card' %}"
+                                            >{% translate "widget-card" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/feature/wizard/' in request.path %}active{% endif %}"
+                                >
+                                    <span
+                                        class="nav-icon uil uil-square"
+                                    ></span>
+                                    <span class="menu-text"
+                                        >{% translate "wizard-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:wizard_one' %}"
+                                            class="{% if path_name == 'wizard_one' %}active{% endif %}"
+                                            >{% translate "wizard-one" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:wizard_two' %}"
+                                            class="{% if path_name == 'wizard_two' %}active{% endif %}"
+                                            >{% translate "wizard-two" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:wizard_three' %}"
+                                            class="{% if path_name == 'wizard_three' %}active{% endif %}"
+                                            >{% translate "wizard-three" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:wizard_four' %}"
+                                            class="{% if path_name == 'wizard_four' %}active{% endif %}"
+                                            >{% translate "wizard-four" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'feature:wizard_five' %}"
+                                            class="{% if path_name == 'wizard_five' %}active{% endif %}"
+                                            >{% translate "wizard-five" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-subMenu-left">
+                                <a
+                                    href="#"
+                                    class="{% if '/pages/knowledge/' in request.path %}active{% endif %}"
+                                >
+                                    <span
+                                        class="nav-icon uil uil-window"
+                                    ></span>
+                                    <span class="menu-text"
+                                        >{% translate "knowledge-menu-title"
+                                        %}</span
+                                    >
+                                </a>
+                                <ul class="subMenu">
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'knowledge_base' %}active{% endif %}"
+                                            href="{% url 'pages:knowledge_base' %}"
+                                            >{% translate "knowledge-base" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'articles' %}active{% endif %}"
+                                            href="{% url 'pages:articles' %}"
+                                            >{% translate
+                                            "knowledge-all-article" %}</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'article' %}active{% endif %}"
+                                            href="{% url 'pages:article' %}"
+                                            >{% translate
+                                            "knowledge-single-article" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mega-item has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if path_name == 'changelog' or path_name == 'pricing' or path_name == 'banner' or path_name == 'testimonial' or path_name == 'support' or path_name == 'faq' or path_name == 'search_result' or path_name == 'blank' or '/pages/gallery/' in request.path or '/pages/blog/' in request.path or path_name == 'terms' or path_name == 'maintenance' or path_name == 'coming_soon' or path_name == 'not_found' %}active{% endif %}"
+                            >Pages</a
+                        >
+                        <ul class="megaMenu-wrapper megaMenu-small">
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="{% url 'dashboard:changelog' %}"
+                                            class="{% if path_name == 'changelog' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-arrow-growth"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "changelog-menu-title" %}</span
+                                            >
+                                            <span
+                                                class="badge badge-info-10 menuItem rounded-pill"
+                                                >1.0.0</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="{% if '/pages/gallery/' in request.path %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-images"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "gallery-menu-title" %}</span
+                                            >
+                                        </a>
+                                        <ul class="subMenu">
+                                            <li>
+                                                <a
+                                                    href="{% url 'pages:gallery_one' %}"
+                                                    class="{% if path_name == 'gallery_one' %}active{% endif %}"
+                                                    >{% translate "gallery-one"
+                                                    %}</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="{% url 'pages:gallery_two' %}"
+                                                    class="{% if path_name == 'gallery_two' %}active{% endif %}"
+                                                    >{% translate "gallery-two"
+                                                    %}</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:pricing' %}"
+                                            class="{% if path_name == 'pricing' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-bill"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "pricing-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:banner' %}"
+                                            class="{% if path_name == 'banner' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-thumbs-up"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "banner-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:testimonial' %}"
+                                            class="{% if path_name == 'testimonial' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-book-open"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "testimonial-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:faq' %}"
+                                            class="{% if path_name == 'faq' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-question-circle"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "faq-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:search_result' %}"
+                                            class="{% if path_name == 'search_result' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-credit-card-search"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "search-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:blank' %}"
+                                            class="{% if path_name == 'blank' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-circle"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "blank-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:support' %}"
+                                            class="{% if path_name == 'support' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-headphones"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "support-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:blog_one' %}"
+                                            class="{% if path_name == 'blog_one' %}active{% endif %}"
+                                            >{% translate "blog-style-one" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:blog_two' %}"
+                                            class="{% if path_name == 'blog_two' %}active{% endif %}"
+                                            >{% translate "blog-style-two" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:blog_three' %}"
+                                            class="{% if path_name == 'blog_three' %}active{% endif %}"
+                                            >{% translate "blog-style-three"
+                                            %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:blog_details' %}"
+                                            class="{% if path_name == 'blog_details' %}active{% endif %}"
+                                            >{% translate "blog-detail" %}</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:terms' %}"
+                                            class="{% if path_name == 'terms' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-question-circle"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate "terms-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:maintenance' %}"
+                                            class="{% if path_name == 'maintenance' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-airplay"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "maintenance-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:not_found' %}"
+                                            class="{% if path_name == 'not_found' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-exclamation-triangle"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "not-found-menu-title" %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="{% url 'pages:coming_soon' %}"
+                                            class="{% if path_name == 'coming_soon' %}active{% endif %}"
+                                        >
+                                            <span
+                                                class="nav-icon uil uil-sync"
+                                            ></span>
+                                            <span class="menu-text"
+                                                >{% translate
+                                                "coming-soon-menu-title"
+                                                %}</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mega-item has-subMenu">
+                        <a
+                            href="#"
+                            class="{% if '/ui/' in request.path %}active{% endif %}"
+                            >Components</a
+                        >
+                        <ul class="megaMenu-wrapper megaMenu-wide">
+                            <li>
+                                <span class="mega-title">Components</span>
+                                <ul>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'alert' %}active{% endif %}"
+                                            href="{% url 'ui:alert' %}"
+                                            >{% translate "ui-alert" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'avatar' %}active{% endif %}"
+                                            href="{% url 'ui:avatar' %}"
+                                            >{% translate "ui-avatar" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'badge' %}active{% endif %}"
+                                            href="{% url 'ui:badge' %}"
+                                            >{% translate "ui-badge" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'breadcrumb' %}active{% endif %}"
+                                            href="{% url 'ui:breadcrumb' %}"
+                                            >{% translate "ui-breadcrumb" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'button' %}active{% endif %}"
+                                            href="{% url 'ui:button' %}"
+                                            >{% translate "ui-button" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'card' %}active{% endif %}"
+                                            href="{% url 'ui:card' %}"
+                                            >{% translate "ui-card" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'carousel' %}active{% endif %}"
+                                            href="{% url 'ui:carousel' %}"
+                                            >{% translate "ui-carousel" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'checkbox' %}active{% endif %}"
+                                            href="{% url 'ui:checkbox' %}"
+                                            >{% translate "ui-checkbox" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'collapse' %}active{% endif %}"
+                                            href="{% url 'ui:collapse' %}"
+                                            >{% translate "ui-collapse" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'comment' %}active{% endif %}"
+                                            href="{% url 'ui:comment' %}"
+                                            >{% translate "ui-comment" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="mega-title">Components</span>
+                                <ul>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'dashboard_base' %}active{% endif %}"
+                                            href="{% url 'ui:dashboard_base' %}"
+                                            >{% translate "ui-dashboard-base"
+                                            %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'datepicker' %}active{% endif %}"
+                                            href="{% url 'ui:datepicker' %}"
+                                            >{% translate "ui-date-picker" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'drawer' %}active{% endif %}"
+                                            href="{% url 'ui:drawer' %}"
+                                            >{% translate "ui-drawer" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'drag_drop' %}active{% endif %}"
+                                            href="{% url 'ui:drag_drop' %}"
+                                            >{% translate "ui-drag-drop" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'dropdown' %}active{% endif %}"
+                                            href="{% url 'ui:dropdown' %}"
+                                            >{% translate "ui-dropdown" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'empty' %}active{% endif %}"
+                                            href="{% url 'ui:empty' %}"
+                                            >{% translate "ui-empty" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'grid' %}active{% endif %}"
+                                            href="{% url 'ui:grid' %}"
+                                            >{% translate "ui-grid" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'input' %}active{% endif %}"
+                                            href="{% url 'ui:input' %}"
+                                            >{% translate "ui-input" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'list' %}active{% endif %}"
+                                            href="{% url 'ui:list' %}"
+                                            >{% translate "ui-list" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'menu' %}active{% endif %}"
+                                            href="{% url 'ui:menu' %}"
+                                            >{% translate "ui-menu" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'message' %}active{% endif %}"
+                                            href="{% url 'ui:message' %}"
+                                            >{% translate "ui-message" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="mega-title">Components</span>
+                                <ul>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'modals' %}active{% endif %}"
+                                            href="{% url 'ui:modals' %}"
+                                            >{% translate "ui-modal" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'notifications' %}active{% endif %}"
+                                            href="{% url 'ui:notifications' %}"
+                                            >{% translate "ui-notification"
+                                            %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'page_header' %}active{% endif %}"
+                                            href="{% url 'ui:page_header' %}"
+                                            >{% translate "ui-page-header" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'paginations' %}active{% endif %}"
+                                            href="{% url 'ui:paginations' %}"
+                                            >{% translate "ui-pagination" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'progress' %}active{% endif %}"
+                                            href="{% url 'ui:progress' %}"
+                                            >{% translate "ui-progress" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'radio' %}active{% endif %}"
+                                            href="{% url 'ui:radio' %}"
+                                            >{% translate "ui-radio" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'rate' %}active{% endif %}"
+                                            href="{% url 'ui:rate' %}"
+                                            >{% translate "ui-rate" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'result' %}active{% endif %}"
+                                            href="{% url 'ui:result' %}"
+                                            >{% translate "ui-result" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'select' %}active{% endif %}"
+                                            href="{% url 'ui:select' %}"
+                                            >{% translate "ui-select" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'skeleton' %}active{% endif %}"
+                                            href="{% url 'ui:skeleton' %}"
+                                            >{% translate "ui-skeleton" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'timepicker' %}active{% endif %}"
+                                            href="{% url 'ui:timepicker' %}"
+                                            >{% translate "ui-time-picker" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="mega-title">Components</span>
+                                <ul>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'slider' %}active{% endif %}"
+                                            href="{% url 'ui:slider' %}"
+                                            >{% translate "ui-slider" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'spinner' %}active{% endif %}"
+                                            href="{% url 'ui:spinner' %}"
+                                            >{% translate "ui-spinner" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'statistic' %}active{% endif %}"
+                                            href="{% url 'ui:statistic' %}"
+                                            >{% translate "ui-statistic" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'steps' %}active{% endif %}"
+                                            href="{% url 'ui:steps' %}"
+                                            >{% translate "ui-step" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'switch' %}active{% endif %}"
+                                            href="{% url 'ui:switch' %}"
+                                            >{% translate "ui-switch" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'tabs' %}active{% endif %}"
+                                            href="{% url 'ui:tabs' %}"
+                                            >{% translate "ui-tab" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'tag' %}active{% endif %}"
+                                            href="{% url 'ui:tag' %}"
+                                            >{% translate "ui-tag" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'timeline' %}active{% endif %}"
+                                            href="{% url 'ui:timeline' %}"
+                                            >{% translate "ui-timeline" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'timeline2' %}active{% endif %}"
+                                            href="{% url 'ui:timeline2' %}"
+                                            >{% translate "ui-timeline2" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'timeline3' %}active{% endif %}"
+                                            href="{% url 'ui:timeline3' %}"
+                                            >{% translate "ui-timeline3" %}</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="{% if path_name == 'upload' %}active{% endif %}"
+                                            href="{% url 'ui:upload' %}"
+                                            >{% translate "ui-upload" %}</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-right">
+        <ul class="navbar-right__menu">
+            <li class="nav-search">
+                <a href="#" class="search-toggle">
+                    <i class="uil uil-search"></i>
+                    <i class="uil uil-times"></i>
+                </a>
+                <form action="/" class="search-form-topMenu">
+                    <span class="search-icon uil uil-search"></span>
+                    <input
+                        class="form-control me-sm-2 box-shadow-none"
+                        type="search"
+                        placeholder="Search..."
+                        aria-label="Search"
+                    />
+                </form>
+            </li>
+            <li class="nav-message">
+                <div class="dropdown-custom">
+                    <a href="javascript:;" class="nav-item-toggle icon-active">
+                        <img
+                            class="svg"
+                            src="{% static 'img/svg/message.svg' %}"
+                            alt="img"
+                        />
+                    </a>
+                    <div class="dropdown-parent-wrapper">
+                        <div class="dropdown-wrapper">
+                            <h2 class="dropdown-wrapper__title">
+                                Messages
+                                <span class="badge-circle badge-success ms-1"
+                                    >2</span
+                                >
+                            </h2>
+                            <ul>
+                                <li class="author-online has-new-message">
+                                    <div class="user-avater">
+                                        <img
+                                            src="{% static 'img/team-1.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >Web Design</a
+                                            >
+                                            <span class="time-posted"
+                                                >3 hrs ago</span
+                                            >
+                                        </p>
+                                        <p>
+                                            <span
+                                                class="desc text-truncate"
+                                                style="max-width: 215px"
+                                                >Lorem ipsum dolor amet cosec
+                                                Lorem ipsum</span
+                                            >
+                                            <span
+                                                class="msg-count badge-circle badge-success badge-sm"
+                                                >1</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline has-new-message">
+                                    <div class="user-avater">
+                                        <img
+                                            src="{% static 'img/team-1.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >Web Design</a
+                                            >
+                                            <span class="time-posted"
+                                                >3 hrs ago</span
+                                            >
+                                        </p>
+                                        <p>
+                                            <span
+                                                class="desc text-truncate"
+                                                style="max-width: 215px"
+                                                >Lorem ipsum dolor amet cosec
+                                                Lorem ipsum</span
+                                            >
+                                            <span
+                                                class="msg-count badge-circle badge-success badge-sm"
+                                                >1</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-online has-new-message">
+                                    <div class="user-avater">
+                                        <img
+                                            src="{% static 'img/team-1.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >Web Design</a
+                                            >
+                                            <span class="time-posted"
+                                                >3 hrs ago</span
+                                            >
+                                        </p>
+                                        <p>
+                                            <span
+                                                class="desc text-truncate"
+                                                style="max-width: 215px"
+                                                >Lorem ipsum dolor amet cosec
+                                                Lorem ipsum</span
+                                            >
+                                            <span
+                                                class="msg-count badge-circle badge-success badge-sm"
+                                                >1</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline">
+                                    <div class="user-avater">
+                                        <img
+                                            src="{% static 'img/team-1.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >Web Design</a
+                                            >
+                                            <span class="time-posted"
+                                                >3 hrs ago</span
+                                            >
+                                        </p>
+                                        <p>
+                                            <span
+                                                class="desc text-truncate"
+                                                stytle="max-width: 215px;"
+                                                >Lorem ipsum dolor amet cosec
+                                                Lorem ipsum</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline">
+                                    <div class="user-avater">
+                                        <img
+                                            src="{% static 'img/team-1.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >Web Design</a
+                                            >
+                                            <span class="time-posted"
+                                                >3 hrs ago</span
+                                            >
+                                        </p>
+                                        <p>
+                                            <span
+                                                class="desc text-truncate"
+                                                style="max-width: 215px"
+                                                >Lorem ipsum dolor amet cosec
+                                                Lorem ipsum</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="dropdown-wrapper__more"
+                                >See All Message</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-notification">
+                <div class="dropdown-custom">
+                    <a href="javascript:;" class="nav-item-toggle icon-active">
+                        <img
+                            class="svg"
+                            src="{% static 'img/svg/alarm.svg' %}"
+                            alt="img"
+                        />
+                    </a>
+                    <div class="dropdown-parent-wrapper">
+                        <div class="dropdown-wrapper">
+                            <h2 class="dropdown-wrapper__title">
+                                Notifications
+                                <span class="badge-circle badge-warning ms-1"
+                                    >4</span
+                                >
+                            </h2>
+                            <ul>
+                                <li
+                                    class="nav-notification__single nav-notification__single--unread d-flex flex-wrap"
+                                >
+                                    <div
+                                        class="nav-notification__type nav-notification__type--primary"
+                                    >
+                                        <img
+                                            class="svg"
+                                            src="{% static 'img/svg/inbox.svg' %}"
+                                            alt="inbox"
+                                        />
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >James</a
+                                            >
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted"
+                                                >5 hours ago</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                    class="nav-notification__single nav-notification__single--unread d-flex flex-wrap"
+                                >
+                                    <div
+                                        class="nav-notification__type nav-notification__type--secondary"
+                                    >
+                                        <img
+                                            class="svg"
+                                            src="{% static 'img/svg/upload.svg' %}"
+                                            alt="upload"
+                                        />
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >James</a
+                                            >
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted"
+                                                >5 hours ago</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                    class="nav-notification__single nav-notification__single--unread d-flex flex-wrap"
+                                >
+                                    <div
+                                        class="nav-notification__type nav-notification__type--success"
+                                    >
+                                        <img
+                                            class="svg"
+                                            src="{% static 'img/svg/log-in.svg' %}"
+                                            alt="log-in"
+                                        />
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >James</a
+                                            >
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted"
+                                                >5 hours ago</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                    class="nav-notification__single nav-notification__single d-flex flex-wrap"
+                                >
+                                    <div
+                                        class="nav-notification__type nav-notification__type--info"
+                                    >
+                                        <img
+                                            class="svg"
+                                            src="{% static 'img/svg/at-sign.svg' %}"
+                                            alt="at-sign"
+                                        />
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >James</a
+                                            >
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted"
+                                                >5 hours ago</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                    class="nav-notification__single nav-notification__single d-flex flex-wrap"
+                                >
+                                    <div
+                                        class="nav-notification__type nav-notification__type--danger"
+                                    >
+                                        <img
+                                            src="{% static 'img/svg/heart.svg' %}"
+                                            alt="heart"
+                                            class="svg"
+                                        />
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a
+                                                href=""
+                                                class="subject stretched-link text-truncate"
+                                                style="max-width: 180px"
+                                                >James</a
+                                            >
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted"
+                                                >5 hours ago</span
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="dropdown-wrapper__more"
+                                >See all incoming activity</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-settings">
+                <div class="dropdown-custom">
+                    <a href="javascript:;" class="nav-item-toggle">
+                        <img
+                            src="{% static 'img/svg/settings.svg' %}"
+                            alt="img"
+                            class="svg"
+                        />
+                    </a>
+                    <div class="dropdown-parent-wrapper">
+                        <div class="dropdown-wrapper dropdown-wrapper--large">
+                            <ul class="list-settings">
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/mail.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >All Features</a
+                                            >
+                                        </h6>
+                                        <p>
+                                            Introducing Increment subscriptions
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/color-palette.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >Themes</a
+                                            >
+                                        </h6>
+                                        <p>
+                                            Third party themes that are
+                                            compatible
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/home.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >Payments</a
+                                            >
+                                        </h6>
+                                        <p>We handle billions of dollars</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/video-camera.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >Design Mockups</a
+                                            >
+                                        </h6>
+                                        <p>
+                                            Share planning visuals with clients
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/document.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >Content Planner</a
+                                            >
+                                        </h6>
+                                        <p>
+                                            Centralize content gethering and
+                                            editing
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="me-3">
+                                        <img
+                                            src="{% static 'img/microphone.png' %}"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link"
+                                                >Diagram Maker</a
+                                            >
+                                        </h6>
+                                        <p>Plan user flows & test scenarios</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-flag-select">
+                <div class="dropdown-custom">
+                    {% if request.LANGUAGE_CODE == 'en' %}
+                    <a href="javascript:;" class="nav-item-toggle"
+                        ><img
+                            src="{% static 'img/eng.png' %}"
+                            alt=""
+                            class="rounded-circle"
+                    /></a>
+                    {% elif request.LANGUAGE_CODE == 'de' %}
+                    <a href="javascript:;" class="nav-item-toggle"
+                        ><img
+                            src="{% static 'img/ger.png' %}"
+                            alt=""
+                            class="rounded-circle"
+                    /></a>
+                    {% elif request.LANGUAGE_CODE == 'ar' %}
+                    <a href="javascript:;" class="nav-item-toggle"
+                        ><img
+                            src="{% static 'img/iraq.png' %}"
+                            alt=""
+                            class="rounded-circle"
+                    /></a>
+                    {% endif %}
+                    <div class="dropdown-parent-wrapper">
+                        <div class="dropdown-wrapper dropdown-wrapper--small">
+                            {% get_current_language as LANGUAGE_CODE %} {%
+                            get_available_languages as LANGUAGES %} {%
+                            get_language_info_list for LANGUAGES as languages %}
+                            {% for lang in languages %}
+                            <a
+                                href="/{{ lang.code }}{{ request.get_full_path|slice:'3:' }}"
+                            >
+                                {% if lang.code == 'en' %}
+                                <img src="{% static 'img/eng.png' %}" alt="" />
+                                {% elif lang.code == 'de' %}
+                                <img src="{% static 'img/ger.png' %}" alt="" />
+                                {% elif lang.code == 'ar' %}
+                                <img src="{% static 'img/iraq.png' %}" alt="" />
+                                {% endif %} {{ lang.name_local }}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-author">
+                {% if user.is_authenticated %}
+                <div class="dropdown-custom">
+                    <a href="javascript:;" class="nav-item-toggle"
+                        ><img
+                            src="{% static 'img/author-nav.jpg' %}"
+                            alt=""
+                            class="rounded-circle"
+                        />
+                        <span class="nav-item__title"
+                            >{{ user.get_full_name }}<i
+                                class="las la-angle-down nav-item__arrow"
+                            ></i
+                        ></span>
+                    </a>
+                    <div class="dropdown-parent-wrapper">
+                        <div class="dropdown-wrapper">
+                            <div class="nav-author__info">
+                                <div class="author-img">
+                                    <img
+                                        src="{% static 'img/author-nav.jpg' %}"
+                                        alt=""
+                                        class="rounded-circle"
+                                    />
+                                </div>
+                                <div>
+                                    <h6>{{ user.get_full_name }}</h6>
+                                    <span>UI Designer</span>
+                                </div>
+                            </div>
+                            <div class="nav-author__options">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img
+                                                src="{% static 'img/svg/user.svg' %}"
+                                                alt="user"
+                                                class="svg"
+                                            />
+                                            Profile</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img
+                                                src="{% static 'img/svg/settings.svg' %}"
+                                                alt="setting"
+                                                class="svg"
+                                            />
+                                            Settings</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img
+                                                src="{% static 'img/svg/key.svg' %}"
+                                                alt="key"
+                                                class="svg"
+                                            />
+                                            Billing</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img
+                                                class="svg"
+                                                src="{% static 'img/svg/users.svg' %}"
+                                                alt="users"
+                                            />
+                                            Activity</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img
+                                                src="{% static 'img/svg/bell.svg' %}"
+                                                alt="bell"
+                                                class="svg"
+                                            />
+                                            Help</a
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="{% url 'sign_out' %}"
+                                    class="nav-author__signout"
+                                >
+                                    <i class="uil uil-sign-out-alt"></i> Sign
+                                    Out</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </li>
+        </ul>
+        <div class="navbar-right__mobileAction d-md-none">
+            <a href="#" class="btn-search">
+                <img
+                    src="{% static 'img/svg/search.svg' %}"
+                    alt="search"
+                    class="svg feather-search" />
+                <img
+                    src="{% static 'img/svg/x.svg' %}"
+                    alt="x"
+                    class="svg feather-x"
+            /></a>
+            <a href="#" class="btn-author-action">
+                <img
+                    class="svg"
+                    src="{% static 'img/svg/more-vertical.svg' %}"
+                    alt="more-vertical"
+            /></a>
+        </div>
+    </div>
+</nav>
+{% endwith %}

@@ -1,0 +1,743 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 08:25+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\hexadash_django\settings.py:133
+msgid "English"
+msgstr ""
+
+#: .\hexadash_django\settings.py:134
+msgid "German"
+msgstr ""
+
+#: .\hexadash_django\settings.py:135
+msgid "Arabic"
+msgstr ""
+
+#: .\templates\pages\dashboards\demo_one.html:15
+#: .\templates\partials\_menu.html:8
+msgid "dashboard-menu-title"
+msgstr "عنوان القائمة"
+
+#: .\templates\partials\_menu.html:13
+msgid "dashboard-demo-one"
+msgstr "واحد تجريبي"
+
+#: .\templates\partials\_menu.html:16
+msgid "dashboard-demo-two"
+msgstr "تجريبي الثاني"
+
+#: .\templates\partials\_menu.html:19
+msgid "dashboard-demo-three"
+msgstr "تجريبي ثلاثة"
+
+#: .\templates\partials\_menu.html:22
+msgid "dashboard-demo-four"
+msgstr "تجريبي أربعة"
+
+#: .\templates\partials\_menu.html:25
+msgid "dashboard-demo-five"
+msgstr "تجريبي خمسة"
+
+#: .\templates\partials\_menu.html:28
+msgid "social-media"
+msgstr "وسائل التواصل الاجتماعي"
+
+#: .\templates\partials\_menu.html:31
+msgid "fintech"
+msgstr "التكنولوجيا المالية"
+
+#: .\templates\partials\_menu.html:34
+msgid "site-performance"
+msgstr "أداء الموقع"
+
+#: .\templates\partials\_menu.html:37
+msgid "ecommerce"
+msgstr "التجارة الإلكترونية"
+
+#: .\templates\partials\_menu.html:40
+msgid "crm"
+msgstr "مدير علاقات العملاء"
+
+#: .\templates\partials\_menu.html:43
+msgid "sales-performance"
+msgstr "اداء المبيعات"
+
+#: .\templates\partials\_menu.html:50
+msgid "layout-menu-title"
+msgstr "التخطيطات"
+
+#: .\templates\partials\_menu.html:55
+msgid "layout-light-mode"
+msgstr "وضع الضوء"
+
+#: .\templates\partials\_menu.html:58
+msgid "layout-dark-mode"
+msgstr "الوضع الداكن"
+
+#: .\templates\partials\_menu.html:61
+msgid "layout-top-menu"
+msgstr "القائمة العلوية"
+
+#: .\templates\partials\_menu.html:64
+msgid "layout-side-menu"
+msgstr "قائمة جانبية"
+
+#: .\templates\partials\_menu.html:67
+msgid "layout-rtl"
+msgstr "من اليمين الى اليسار"
+
+#: .\templates\partials\_menu.html:70
+msgid "layout-ltr"
+msgstr "من اليسار إلى اليمين"
+
+#: .\templates\partials\_menu.html:77
+msgid "changelog-menu-title"
+msgstr "عنوان القائمة"
+
+#: .\templates\partials\_menu.html:87
+msgid "email-menu-title"
+msgstr "بريد الالكتروني"
+
+#: .\templates\partials\_menu.html:92
+msgid "email-inbox"
+msgstr "صندوق الوارد"
+
+#: .\templates\partials\_menu.html:95
+msgid "email-read"
+msgstr "قراءة البريد الإلكتروني"
+
+#: .\templates\partials\_menu.html:102
+msgid "chat-menu-title"
+msgstr "دردشة"
+
+#: .\templates\partials\_menu.html:109
+msgid "ecommerce-menu-title"
+msgstr "التجارة الإلكترونية"
+
+#: .\templates\partials\_menu.html:114
+msgid "ecommerce-products"
+msgstr "منتجات"
+
+#: .\templates\partials\_menu.html:117
+msgid "ecommerce-product-details"
+msgstr "تفاصيل المنتج"
+
+#: .\templates\partials\_menu.html:120
+msgid "ecommerce-product-add"
+msgstr "إضافة المنتج"
+
+#: .\templates\partials\_menu.html:123
+msgid "ecommerce-cart"
+msgstr "عربة التسوق"
+
+#: .\templates\partials\_menu.html:126
+msgid "ecommerce-orders"
+msgstr "أوامر"
+
+#: .\templates\partials\_menu.html:129
+msgid "ecommerce-sellers"
+msgstr "الباعة"
+
+#: .\templates\partials\_menu.html:132
+msgid "ecommerce-invoices"
+msgstr "الفواتير"
+
+#: .\templates\partials\_menu.html:139
+msgid "project-menu-title"
+msgstr "المشروع"
+
+#: .\templates\partials\_menu.html:144 .\templates\partials\_menu.html:150
+msgid "project-title"
+msgstr "المشروع"
+
+#: .\templates\partials\_menu.html:147
+msgid "project-detail"
+msgstr "تفاصيل المشروعs"
+
+#: .\templates\partials\_menu.html:157
+msgid "calendar-menu-title"
+msgstr "التقويم"
+
+#: .\templates\partials\_menu.html:163
+msgid "user-menu-title"
+msgstr "المستخدمون"
+
+#: .\templates\partials\_menu.html:168
+msgid "user-team"
+msgstr "فريق"
+
+#: .\templates\partials\_menu.html:171
+msgid "user-grid"
+msgstr "شبكة المستخدمين"
+
+#: .\templates\partials\_menu.html:174
+msgid "user-list"
+msgstr "قائمة المستخدمين"
+
+#: .\templates\partials\_menu.html:177
+msgid "user-grid-style"
+msgstr "نمط شبكة المستخدمين"
+
+#: .\templates\partials\_menu.html:180
+msgid "user-group"
+msgstr "مجموعة المستخدمين"
+
+#: .\templates\partials\_menu.html:183
+msgid "user-add"
+msgstr "إضافة المستخدم"
+
+#: .\templates\partials\_menu.html:186
+msgid "user-table"
+msgstr "جدول المستخدمين"
+
+#: .\templates\partials\_menu.html:193
+msgid "contact-menu-title"
+msgstr "اتصل"
+
+#: .\templates\partials\_menu.html:198
+msgid "contact-grid"
+msgstr "شبكة الاتصال"
+
+#: .\templates\partials\_menu.html:201 .\templates\partials\_menu.html:204
+msgid "contact-list"
+msgstr "قائمة الإتصال"
+
+#: .\templates\partials\_menu.html:211
+msgid "note-menu-title"
+msgstr "ملحوظة"
+
+#: .\templates\partials\_menu.html:217
+msgid "todo-menu-title"
+msgstr "لكى يفعل"
+
+#: .\templates\partials\_menu.html:223
+msgid "kanban-menu-title"
+msgstr "طريق التجويف اللافتة"
+
+#: .\templates\partials\_menu.html:229
+msgid "ie-menu-title"
+msgstr "استيراد و تصدير"
+
+#: .\templates\partials\_menu.html:234
+msgid "ie-import"
+msgstr "يستورد"
+
+#: .\templates\partials\_menu.html:237
+msgid "ie-export"
+msgstr "يصدر"
+
+#: .\templates\partials\_menu.html:240
+msgid "ie-export-selected"
+msgstr "تصدير مُحدد"
+
+#: .\templates\partials\_menu.html:247
+msgid "filemanager-menu-title"
+msgstr "مدير الملفات"
+
+#: .\templates\partials\_menu.html:253
+msgid "task-menu-title"
+msgstr "تطبيق المهام"
+
+#: .\templates\partials\_menu.html:260
+msgid "bookmark-menu-title"
+msgstr "الإشارات المرجعية"
+
+#: .\templates\partials\_menu.html:266
+msgid "social-menu-title"
+msgstr "التطبيق الاجتماعي"
+
+#: .\templates\partials\_menu.html:271
+msgid "social-profile"
+msgstr "ملفي"
+
+#: .\templates\partials\_menu.html:274
+msgid "social-profile-setting"
+msgstr "إعدادات الملف الشخصي"
+
+#: .\templates\partials\_menu.html:277
+msgid "social-timeline"
+msgstr "الجدول الزمني"
+
+#: .\templates\partials\_menu.html:280
+msgid "social-activity"
+msgstr "نشاط"
+
+#: .\templates\partials\_menu.html:287 .\templates\partials\_menu.html:702
+msgid "support-menu-title"
+msgstr "الدعم"
+
+#: .\templates\partials\_menu.html:292
+msgid "support-ticket"
+msgstr "بطاقة الدعم"
+
+#: .\templates\partials\_menu.html:295
+msgid "support-ticket-detail"
+msgstr "تفاصيل التذكرة"
+
+#: .\templates\partials\_menu.html:298
+msgid "support-new-ticket"
+msgstr "تذكرة جديدة"
+
+#: .\templates\partials\_menu.html:305
+msgid "job-menu-title"
+msgstr "وظيفةالبحث عن وظيفه"
+
+#: .\templates\partials\_menu.html:310
+msgid "job-search"
+msgstr "شبكة البحث عن الوظائف"
+
+msgid "job-search-list"
+msgstr "قائمة البحث عن الوظائف"
+
+#: .\templates\partials\_menu.html:313
+msgid "job-detail"
+msgstr "تفاصيل الوظيفة"
+
+#: .\templates\partials\_menu.html:316
+msgid "job-apply"
+msgstr "تقدم لوظيفة"
+
+#: .\templates\partials\_menu.html:323
+msgid "table-menu-title"
+msgstr "جدول"
+
+#: .\templates\partials\_menu.html:328
+msgid "table-basic"
+msgstr "الجدول الأساسي"
+
+#: .\templates\partials\_menu.html:331
+msgid "table-data"
+msgstr "جدول البيانات"
+
+#: .\templates\partials\_menu.html:341
+msgid "customer-crud-menu-title"
+msgstr "الزبون"
+
+#: .\templates\partials\_menu.html:346
+msgid "customer-view-all"
+msgstr "مشاهدة الكل"
+
+#: .\templates\partials\_menu.html:349
+msgid "customer-add-new"
+msgstr "اضف جديد"
+
+#: .\templates\partials\_menu.html:359
+msgid "ui-menu-title"
+msgstr "اضف جديد'"
+
+#: .\templates\partials\_menu.html:364
+msgid "ui-alert"
+msgstr "إنذار"
+
+#: .\templates\partials\_menu.html:367
+msgid "ui-avatar"
+msgstr "أفاتار"
+
+#: .\templates\partials\_menu.html:370
+msgid "ui-badge"
+msgstr "شارة"
+
+#: .\templates\partials\_menu.html:373
+msgid "ui-breadcrumb"
+msgstr "مسار التنقل"
+
+#: .\templates\partials\_menu.html:376
+msgid "ui-button"
+msgstr "زر"
+
+#: .\templates\partials\_menu.html:379
+msgid "ui-card"
+msgstr "البطاقات"
+
+#: .\templates\partials\_menu.html:382
+msgid "ui-carousel"
+msgstr "دائري"
+
+#: .\templates\partials\_menu.html:385
+msgid "ui-checkbox"
+msgstr "خانة اختيار"
+
+#: .\templates\partials\_menu.html:388
+msgid "ui-collapse"
+msgstr "انهيار"
+
+#: .\templates\partials\_menu.html:391
+msgid "ui-comment"
+msgstr "تعليقات"
+
+#: .\templates\partials\_menu.html:394
+msgid "ui-dashboard-base"
+msgstr "قاعدة لوحة المعلومات"
+
+#: .\templates\partials\_menu.html:397
+msgid "ui-date-picker"
+msgstr "منتقي التاريخ"
+
+#: .\templates\partials\_menu.html:400
+msgid "ui-drawer"
+msgstr "الدرج"
+
+#: .\templates\partials\_menu.html:403
+msgid "ui-drag-drop"
+msgstr "السحب والانخفاض"
+
+#: .\templates\partials\_menu.html:406
+msgid "ui-dropdown"
+msgstr "اسقاط"
+
+#: .\templates\partials\_menu.html:409
+msgid "ui-empty"
+msgstr "فارغة"
+
+#: .\templates\partials\_menu.html:412
+msgid "ui-grid"
+msgstr "جريد"
+
+#: .\templates\partials\_menu.html:415
+msgid "ui-input"
+msgstr "إدخال"
+
+#: .\templates\partials\_menu.html:418
+msgid "ui-list"
+msgstr "قائمة"
+
+#: .\templates\partials\_menu.html:421
+msgid "ui-menu"
+msgstr "قائمة"
+
+#: .\templates\partials\_menu.html:424
+msgid "ui-message"
+msgstr "رسالة"
+
+#: .\templates\partials\_menu.html:427
+msgid "ui-modal"
+msgstr "الأطال"
+
+#: .\templates\partials\_menu.html:430
+msgid "ui-notification"
+msgstr "تنبيه"
+
+#: .\templates\partials\_menu.html:433
+msgid "ui-page-header"
+msgstr "رؤوس الصفحات"
+
+#: .\templates\partials\_menu.html:436
+msgid "ui-pagination"
+msgstr "الصفحات"
+
+#: .\templates\partials\_menu.html:439
+msgid "ui-progress"
+msgstr "تقدم"
+
+#: .\templates\partials\_menu.html:442
+msgid "ui-radio"
+msgstr "مذياع"
+
+#: .\templates\partials\_menu.html:445
+msgid "ui-rate"
+msgstr "معدل"
+
+#: .\templates\partials\_menu.html:448
+msgid "ui-result"
+msgstr "نتيجة"
+
+#: .\templates\partials\_menu.html:451
+msgid "ui-select"
+msgstr "يختار"
+
+#: .\templates\partials\_menu.html:454
+msgid "ui-skeleton"
+msgstr "هيكل عظمي"
+
+#: .\templates\partials\_menu.html:457
+msgid "ui-slider"
+msgstr "المنزلق"
+
+#: .\templates\partials\_menu.html:460
+msgid "ui-spinner"
+msgstr "سبينر"
+
+#: .\templates\partials\_menu.html:463
+msgid "ui-statistic"
+msgstr "الإحصائية"
+
+#: .\templates\partials\_menu.html:466
+msgid "ui-step"
+msgstr "خطوات"
+
+#: .\templates\partials\_menu.html:469
+msgid "ui-switch"
+msgstr "مفتاح كهربائي"
+
+#: .\templates\partials\_menu.html:472
+msgid "ui-tab"
+msgstr "نوافذ التبويب"
+
+#: .\templates\partials\_menu.html:475
+msgid "ui-tag"
+msgstr "كذا"
+
+#: .\templates\partials\_menu.html:478
+msgid "ui-timeline"
+msgstr "الجدول الزمني"
+
+#: .\templates\partials\_menu.html:481
+msgid "ui-timeline2"
+msgstr "الجدول الزمني 2."
+
+#: .\templates\partials\_menu.html:484
+msgid "ui-timeline3"
+msgstr "الجدول الزمني 3."
+
+#: .\templates\partials\_menu.html:487
+msgid "ui-time-picker"
+msgstr "منتقي الوقت"
+
+#: .\templates\partials\_menu.html:490
+msgid "ui-upload"
+msgstr "تحميل"
+
+#: .\templates\partials\_menu.html:497
+msgid "chart-menu-title"
+msgstr "الرسوم البيانية"
+
+#: .\templates\partials\_menu.html:502
+msgid "chart-js"
+msgstr "الرسم البياني JS."
+
+#: .\templates\partials\_menu.html:505
+msgid "chart-google"
+msgstr "مخططات جوجل"
+
+#: .\templates\partials\_menu.html:508
+msgid "chart-peity"
+msgstr "مخططات الحدوث"
+
+#: .\templates\partials\_menu.html:515
+msgid "form-menu-title"
+msgstr "نماذج"
+
+#: .\templates\partials\_menu.html:520
+msgid "form-basic"
+msgstr "أساسيات"
+
+#: .\templates\partials\_menu.html:523
+msgid "form-layout"
+msgstr "تخطيطات"
+
+#: .\templates\partials\_menu.html:526
+msgid "form-element"
+msgstr "عناصر"
+
+#: .\templates\partials\_menu.html:529
+msgid "form-component"
+msgstr "عناصر"
+
+#: .\templates\partials\_menu.html:532
+msgid "form-validation"
+msgstr "التحقق من الصحة"
+
+#: .\templates\partials\_menu.html:539
+msgid "widget-menu-title"
+msgstr "القطعة"
+
+#: .\templates\partials\_menu.html:544
+msgid "widget-chart"
+msgstr "جدول"
+
+#: .\templates\partials\_menu.html:547
+msgid "widget-mixed"
+msgstr "مختلط"
+
+#: .\templates\partials\_menu.html:550
+msgid "widget-card"
+msgstr "بطاقة"
+
+#: .\templates\partials\_menu.html:557
+msgid "wizard-menu-title"
+msgstr "معالجات"
+
+#: .\templates\partials\_menu.html:562
+msgid "wizard-one"
+msgstr "معالج 1."
+
+#: .\templates\partials\_menu.html:565
+msgid "wizard-two"
+msgstr "معالج 2."
+
+#: .\templates\partials\_menu.html:568
+msgid "wizard-three"
+msgstr "معالج 3."
+
+#: .\templates\partials\_menu.html:571
+msgid "wizard-four"
+msgstr "معالج 4."
+
+#: .\templates\partials\_menu.html:574
+msgid "wizard-five"
+msgstr "معالج 5."
+
+#: .\templates\partials\_menu.html:581
+msgid "icon-menu-title"
+msgstr "الرموز"
+
+#: .\templates\partials\_menu.html:586
+msgid "icon-unicon"
+msgstr "أيقونات يونيكون"
+
+#: .\templates\partials\_menu.html:589
+msgid "icon-awesome"
+msgstr "الخط رائع"
+
+#: .\templates\partials\_menu.html:592
+msgid "icon-line"
+msgstr "خط رائع"
+
+#: .\templates\partials\_menu.html:599
+msgid "editor-menu-title"
+msgstr "محرر"
+
+#: .\templates\partials\_menu.html:605
+msgid "map-menu-title"
+msgstr "خرائط"
+
+#: .\templates\partials\_menu.html:610
+msgid "map-google"
+msgstr "خرائط جوجل"
+
+#: .\templates\partials\_menu.html:613
+msgid "map-leaflet"
+msgstr "خريطة النشرة"
+
+#: .\templates\partials\_menu.html:616
+msgid "map-vector"
+msgstr "ناقلات الخريطة"
+
+#: .\templates\partials\_menu.html:626
+msgid "setting-menu-title"
+msgstr "إعدادات"
+
+#: .\templates\partials\_menu.html:632
+msgid "gallery-menu-title"
+msgstr "صالة عرض"
+
+#: .\templates\partials\_menu.html:637
+msgid "gallery-one"
+msgstr "معرض 1."
+
+#: .\templates\partials\_menu.html:640
+msgid "gallery-two"
+msgstr "معرض 2."
+
+#: .\templates\partials\_menu.html:647
+msgid "pricing-menu-title"
+msgstr "التسعير"
+
+#: .\templates\partials\_menu.html:653
+msgid "banner-menu-title"
+msgstr "بانر"
+
+#: .\templates\partials\_menu.html:659
+msgid "testimonial-menu-title"
+msgstr "شهادة"
+
+#: .\templates\partials\_menu.html:665
+msgid "faq-menu-title"
+msgstr "أسئلة وأجوبة"
+
+#: .\templates\partials\_menu.html:671
+msgid "search-menu-title"
+msgstr "نتائج البحث"
+
+#: .\templates\partials\_menu.html:677
+msgid "blank-menu-title"
+msgstr "صفحة فارغة"
+
+#: .\templates\partials\_menu.html:683
+msgid "knowledge-menu-title"
+msgstr "قاعدة المعرفة"
+
+#: .\templates\partials\_menu.html:688
+msgid "knowledge-base"
+msgstr "قاعدة المعرفة"
+
+#: .\templates\partials\_menu.html:691
+msgid "knowledge-all-article"
+msgstr "كل المادة"
+
+#: .\templates\partials\_menu.html:695
+msgid "knowledge-single-article"
+msgstr "مقال واحد"
+
+#: .\templates\partials\_menu.html:708
+msgid "dynamic-table"
+msgstr "الجدول الديناميكي"
+
+#: .\templates\partials\_menu.html:715
+msgid "blog-menu-title"
+msgstr "مقالات"
+
+#: .\templates\partials\_menu.html:720
+msgid "blog-style-one"
+msgstr "نمط بلوق 1."
+
+#: .\templates\partials\_menu.html:723
+msgid "blog-style-two"
+msgstr "نمط المدونة 2."
+
+#: .\templates\partials\_menu.html:726
+msgid "blog-style-three"
+msgstr "نمط المدونة 3."
+
+#: .\templates\partials\_menu.html:729
+msgid "blog-detail"
+msgstr "تفاصيل المدونة"
+
+#: .\templates\partials\_menu.html:736
+msgid "course-menu-title"
+msgstr "مسار"
+
+#: .\templates\partials\_menu.html:741
+msgid "course-list"
+msgstr "الدورات"
+
+#: .\templates\partials\_menu.html:744
+msgid "course-detail"
+msgstr "تفاصيل الدورة"
+
+#: .\templates\partials\_menu.html:751
+msgid "terms-menu-title"
+msgstr "البنود و الظروف"
+
+#: .\templates\partials\_menu.html:757
+msgid "maintenance-menu-title"
+msgstr "صيانة"
+
+#: .\templates\partials\_menu.html:763
+msgid "not-found-menu-title"
+msgstr ".404"
+
+#: .\templates\partials\_menu.html:769
+msgid "coming-soon-menu-title"
+msgstr "قريبا"
+
+#~ msgid "hello"
+#~ msgstr "Hello Arabic"

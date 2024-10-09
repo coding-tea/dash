@@ -1,0 +1,69 @@
+{% extends 'layout/app.html' %}
+
+{% block title %} Leaflet Map {% endblock %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+<div class="dm-page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-main">
+                    <h4 class="text-capitalize breadcrumb-title">{% translate "map-leaflet" %}</h4>
+                    <div class="breadcrumb-action justify-content-center flex-wrap">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="las la-home"></i>{% translate "map-menu-title" %}</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{% translate "map-leaflet" %}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-default card-md mb-4">
+                    <div class="card-header">
+                        <h6>Leaflet Basic Map</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="leaflet-basic"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-default card-md mb-4">
+                    <div class="card-header">
+                        <h6>Leaflet Multiple Icon</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="leaflet-multiIcon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-default card-md mb-4">
+                    <div class="card-header">
+                        <h6>Leaflet Custom Icon</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="leaflet-customIcon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-default card-md mb-4">
+                    <div class="card-header">
+                        <h6>Leaflet Cluster Map</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="leaflet-cluster"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

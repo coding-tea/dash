@@ -1,0 +1,75 @@
+<div class="card border-0 cashflowChart3 cashflowChart4 h-100">
+    <div class="card-header border-bottom-0">
+        <h6>
+            User Overview
+        </h6>
+        <div class="card-extra">
+            <ul class="card-tab-links nav-tabs nav" role="tablist">
+                <li>
+                    <a class="active" href="#t_revenue-week" data-bs-toggle="tab" id="t_revenue-week-tab" role="tab" aria-selected="true">Week</a>
+                </li>
+                <li>
+                    <a href="#t_revenue-month" data-bs-toggle="tab" id="t_revenue-month-tab" role="tab" aria-selected="false">Month</a>
+                </li>
+                <li>
+                    <a href="#t_revenue-year" data-bs-toggle="tab" id="t_revenue-year-tab" role="tab" aria-selected="false">Year</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-body pt-sm-0 pt-1">
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="t_revenue-week" role="tabpanel" aria-labelledby="t_revenue-week-tab">
+                <div class="cashflow-chart">
+                    <ul class="legend-static d-flex justify-content-center mb-20 mt-0">
+                        <li class="custom-label">
+                            <span class="bg-primary"></span>Won
+                        </li>
+                        <li class="custom-label">
+                            <span class="bg-secondary"></span>Amount
+                        </li>
+                    </ul>
+                    <div class="parentContainer">
+                        <div>
+                            <canvas id="salesGrowthNewMonth"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="t_revenue-month" role="tabpanel" aria-labelledby="t_revenue-month-tab">
+                <div class="cashflow-chart">
+                    <ul class="legend-static d-flex justify-content-center mb-20 mt-0">
+                        <li class="custom-label">
+                            <span class="bg-primary"></span>Won
+                        </li>
+                        <li class="custom-label">
+                            <span class="bg-secondary"></span>Amount
+                        </li>
+                    </ul>
+                    <div class="parentContainer">
+                        <div>
+                            <canvas id="barChartCashflow_Mextra3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="t_revenue-year" role="tabpanel" aria-labelledby="t_revenue-year-tab">
+                <div class="cashflow-chart">
+                    <ul class="legend-static d-flex justify-content-center mb-20 mt-0">
+                        <li class="custom-label">
+                            <span class="bg-primary"></span>Won
+                        </li>
+                        <li class="custom-label">
+                            <span class="bg-secondary"></span>Amount
+                        </li>
+                    </ul>
+                    <div class="parentContainer">
+                        <div>
+                            <canvas id="barChartCashflowYExtra3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
